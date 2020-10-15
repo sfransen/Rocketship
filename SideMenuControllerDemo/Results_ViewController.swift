@@ -1,9 +1,12 @@
 
 import UIKit
+import WebKit
 
-class Results_ViewController: BaseViewController
+class Results_ViewController: BaseViewController, WKNavigationDelegate
 {
-	override func setup()
+    var webView: WKWebView!
+    
+    override func setup()
     {
 		super.setup()
 
@@ -15,20 +18,35 @@ class Results_ViewController: BaseViewController
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
-
-	override func loadView()
+    override func loadView()
     {
-		super.loadView()
-	}
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+        //super.loadView()
+    }
+    func getDocumentsDirectory() -> URL
+    {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
 
 	override func viewDidLoad()
     {
 		super.viewDidLoad()
-
+        //let filename = getDocumentsDirectory().appendingPathComponent("Results.txt")
+        //let url = Bundle.main.url(forResource: "index", withExtension: "txt", subdirectory: "website")!
+        //webView.loadFileURL(url, allowingReadAccessTo: url)
+       // let request = URLRequest(url: url)
+       // webView.load(request)
+        
+        let url = URL(string: "https://www.hackingwithswift.com")!
+        webView.load(URLRequest(url: url))
+        webView.allowsBackForwardNavigationGestures = true
 		self.navigationController?.navigationBar.barTintColor = .systemPurple
 	}
-
-	override func viewWillAppear(_ animated: Bool)
+    
+ 	override func viewWillAppear(_ animated: Bool)
     {
 		super.viewWillAppear(animated)
 	}

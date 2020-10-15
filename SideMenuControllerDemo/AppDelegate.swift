@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 	public fileprivate(set) var themeColor: UIColor? = nil
 
 	var window: UIWindow?
-
+    
 	override init()
     {
 		super.init()
@@ -18,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
 		// Override point for customization after application launch.
+        let screenSize: CGRect = UIScreen.main.bounds
+        print(screenSize)
+        UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.forEach { windowScene in
+            windowScene.sizeRestrictions?.minimumSize = CGSize(width: 1024, height: 1366)
+            windowScene.sizeRestrictions?.maximumSize = CGSize(width: 1024, height: 1366)
+
+        }
 
 		// Create full-screen window
 		self.window = UIWindow(frame: UIScreen.main.bounds)

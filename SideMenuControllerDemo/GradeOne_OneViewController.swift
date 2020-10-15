@@ -119,7 +119,7 @@ class GradeOne_OneViewController: BaseViewController
 
         let str = "<tr><th>" + String(Global_Variables.TOTAL_Count) + "</th><th>" + String(Global_Variables.Global_Question) + "</th><th>" + String(Global_Variables.Global_Correct_Answer) + "</th><th>" +  TheString + "</font></th></tr>\n"
         let data = Data(str.utf8)
-        let filename = getDocumentsDirectory().appendingPathComponent("Results.txt")
+        let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
 
         if let fileHandle = FileHandle(forWritingAtPath: filename.path)
         {
@@ -138,7 +138,7 @@ class GradeOne_OneViewController: BaseViewController
         let THEENDING = TheTable + Last_Row + THEEND
 
         let data = Data(THEENDING.utf8)
-        let filename = getDocumentsDirectory().appendingPathComponent("Results.txt")
+        let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
 
         if let fileHandle = FileHandle(forWritingAtPath: filename.path)
         {
@@ -148,7 +148,7 @@ class GradeOne_OneViewController: BaseViewController
     }
     func Read_To_File()
     {
-        let filename = getDocumentsDirectory().appendingPathComponent("Results.txt")
+        let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
 
         do
         {
@@ -163,7 +163,7 @@ class GradeOne_OneViewController: BaseViewController
     }
     func WriteTableHeader()
     {
-        let filename = getDocumentsDirectory().appendingPathComponent("Results.txt")
+        let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
         do
         {
             let str = "<html><head><title>" + Global_Variables.THEUSER + " " + Global_Variables.TheTitle + "</title></head><body><center><h1>"

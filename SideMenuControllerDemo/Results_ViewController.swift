@@ -34,7 +34,7 @@ class Results_ViewController: BaseViewController, WKNavigationDelegate
 	override func viewDidLoad()
     {
 		super.viewDidLoad()
-        //let filename = getDocumentsDirectory().appendingPathComponent("Results.txt")
+        //let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
         //let url = Bundle.main.url(forResource: "index", withExtension: "txt", subdirectory: "website")!
         //webView.loadFileURL(url, allowingReadAccessTo: url)
        // let request = URLRequest(url: url)

@@ -9,12 +9,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
 	var window: UIWindow?
 
-	override init() {
+	override init()
+    {
 		super.init()
 		self.configureAppearance()
 	}
 
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+    {
 		// Override point for customization after application launch.
 
 		// Create full-screen window
@@ -22,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		self.window?.backgroundColor = .white
 
 		// Make root view controller
-		self.window?.rootViewController = {
+		self.window?.rootViewController =
+        {
 			let sideMenu: SideMenu = SideMenu()
 			return SMCSideMenuController(delegate: sideMenu, style: .grouped)
 		}()
@@ -33,7 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		return true
 	}
 
-	func applicationWillResignActive(_ application: UIApplication) {
+	func applicationWillResignActive(_ application: UIApplication)
+    {
 		/*
 		 * Sent when the application is about to move from active to inactive state.
 		 * This can occur for certain types of temporary interruptions (such as an
@@ -45,7 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		 */
 	}
 
-	func applicationDidEnterBackground(_ application: UIApplication) {
+	func applicationDidEnterBackground(_ application: UIApplication)
+    {
 		/*
 		 * Use this method to release shared resources, save user data,
 		 * invalidate timers, and store enough application state information
@@ -56,14 +61,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		 */
 	}
 
-	func applicationWillEnterForeground(_ application: UIApplication) {
+	func applicationWillEnterForeground(_ application: UIApplication)
+    {
 		/*
 		 * Called as part of the transition from the background to the active state;
 		 * here you can undo many of the changes made on entering the background.
 		 */
 	}
 
-	func applicationDidBecomeActive(_ application: UIApplication) {
+	func applicationDidBecomeActive(_ application: UIApplication)
+    {
 		/*
 		 * Restart any tasks that were paused (or not yet started)
 		 * while the application was inactive. If the application was previously
@@ -71,7 +78,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		 */
 	}
 
-	func applicationWillTerminate(_ application: UIApplication) {
+	func applicationWillTerminate(_ application: UIApplication)
+    {
 		/*
 		 * Called when the application is about to terminate.
 		 * Save data if appropriate. See also applicationDidEnterBackground:.
@@ -81,7 +89,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 
 extension AppDelegate
 {
-	fileprivate func configureAppearance() {
+	fileprivate func configureAppearance()
+    {
 		let barColor: UIColor = .blue
 
 		UINavigationBar.appearance().barTintColor = barColor

@@ -5,7 +5,8 @@ import QuartzCore
 // MARK: - UIViewController extension
 extension UIViewController
 {
-	@objc open func sideMenu(didSelect viewController: UIViewController) {
+	@objc open func sideMenu(didSelect viewController: UIViewController)
+    {
 		// nothing to do
 	}
 }
@@ -14,7 +15,8 @@ extension UIViewController
 let SMCSideMenuControllerDidShowMenuNotification: String = "SMCSideMenuControllerDidShowMenuNotification"
 let SMCSideMenuControllerDidHideMenuNotification: String = "SMCSideMenuControllerDidHideMenuNotification"
 
-extension Notification.Name {
+extension Notification.Name
+{
 	public struct SMCSideMenu
 	{
 		static let ShowSideMenu = Notification.Name(SMCSideMenuControllerDidShowMenuNotification)
@@ -27,7 +29,8 @@ fileprivate let kSectionHeaderFontSize: CGFloat		= 14.0
 
 fileprivate final class SideMenuHeader: UITableViewHeaderFooterView
 {
-	public let titleLabel: UILabel = {
+	public let titleLabel: UILabel =
+    {
 		let label: UILabel = UILabel()
 		label.backgroundColor = .clear
 		label.textAlignment = .left
@@ -36,20 +39,24 @@ fileprivate final class SideMenuHeader: UITableViewHeaderFooterView
 		return label
 	}()
 
-	required init?(coder aDecoder: NSCoder) {
+	required init?(coder aDecoder: NSCoder)
+    {
 		super.init(coder: aDecoder)
 	}
 
-	override init(reuseIdentifier: String?) {
+	override init(reuseIdentifier: String?)
+    {
 		super.init(reuseIdentifier: reuseIdentifier)
 
 		self.contentView.addSubview(titleLabel)
 	}
 
-	override func layoutSubviews() {
+	override func layoutSubviews()
+    {
 		super.layoutSubviews()
 
-		titleLabel.frame = {
+		titleLabel.frame =
+        {
 			let m: UIEdgeInsets = UIEdgeInsets(top: 4.0, left: 4.0, bottom: 4.0, right: 4.0)
 			let x: CGFloat = m.left
 			let y: CGFloat = m.top
@@ -88,14 +95,16 @@ public class SMCSideMenuController: UIViewController
 		return tableView
 	}()
 
-	private var sideMenuWidth: CGFloat {
+	private var sideMenuWidth: CGFloat
+    {
 		let width: CGFloat = self.view.bounds.size.width
 		let right: CGFloat = 64.0 // Right margin at showing side menu
 		return width - right
 	}
 
 	// Setup the container view which will hold the child view controllers view
-	private lazy var containerView: UIView = {
+	private lazy var containerView: UIView =
+    {
 		let containerView: UIView = UIView()
 		var frame = self.view.bounds
 		frame.origin.x = self.sideMenuWidth
@@ -125,7 +134,8 @@ public class SMCSideMenuController: UIViewController
 	}()
 
 	// Setup the touch mask for when the menu is visible
-	private lazy var touchView: UIView = {
+	private lazy var touchView: UIView =
+    {
 		let touchView: UIView = UIView()
 		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGestureHandler))
 		touchView.addGestureRecognizer(tapGesture)
@@ -137,17 +147,20 @@ public class SMCSideMenuController: UIViewController
 	private var isModalPresenting: Bool = false
 
 	// Designated Initializer
-	public required init(coder aDecoder: NSCoder) {
+	public required init(coder aDecoder: NSCoder)
+    {
 		fatalError("NSCoding not supported")
 	}
 
-	public init(delegate: SMCSideMenuDelegate, style: UITableView.Style = .plain) {
+	public init(delegate: SMCSideMenuDelegate, style: UITableView.Style = .plain)
+    {
 		self.delegate = delegate
 		self.tableStyle = style
 		super.init(nibName: nil, bundle: nil)
 	}
 
-	public override func loadView() {
+	public override func loadView()
+    {
 		super.loadView()
 
 		self.view.backgroundColor	= .systemBackground
@@ -171,14 +184,17 @@ public class SMCSideMenuController: UIViewController
 		self.view.addSubview(touchView)
 	}
 
-	public override func viewDidLoad() {
+	public override func viewDidLoad()
+    {
 		super.viewDidLoad()
 	}
 
-	public override func viewWillAppear(_ animated: Bool) {
+	public override func viewWillAppear(_ animated: Bool)
+    {
 		super.viewWillAppear(animated)
 
-		if isModalPresenting {
+		if isModalPresenting
+        {
 			isModalPresenting = false
 			// XXX: ModalViewController を閉じたので以前の ViewController を継続利用
 			return
@@ -199,21 +215,24 @@ public class SMCSideMenuController: UIViewController
 		hideMenu(withDuration:0.0, delay: 0.0)
 	}
 
-	public override func viewWillDisappear(_ animated: Bool) {
+	public override func viewWillDisappear(_ animated: Bool)
+    {
 		// XXX: SMCSideMenuController が Disappear するのは Modal 状態の場合なので
 		isModalPresenting = true
 
 		super.viewWillDisappear(animated)
 	}
 
-	public override func viewWillLayoutSubviews() {
+	public override func viewWillLayoutSubviews()
+    {
 		super.viewWillLayoutSubviews()
 
 		let safeAreaInsets: UIEdgeInsets = self.view.safeAreaInsets
 
 		let height: CGFloat = self.view.bounds.size.height - (safeAreaInsets.top + safeAreaInsets.bottom)
 
-		tableView.frame = {
+		tableView.frame =
+        {
 			let x: CGFloat = 0.0
 			let y: CGFloat = safeAreaInsets.top
 			let w: CGFloat = self.sideMenuWidth
@@ -221,28 +240,32 @@ public class SMCSideMenuController: UIViewController
 			return CGRect(x: x, y: y, width: w, height: h)
 		}()
 
-		touchView.frame = {
+		touchView.frame =
+        {
 			var frame = self.view.bounds
 			frame.origin.x = self.sideMenuWidth
 			return frame
 		}()
 	}
 
-	public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+	public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator)
+    {
 		super.viewWillTransition(to: size, with: coordinator)
 	}
 }
 
 extension SMCSideMenuController
 {
-	@objc func tapGestureHandler(gesture: UITapGestureRecognizer) {
+	@objc func tapGestureHandler(gesture: UITapGestureRecognizer)
+    {
 		hideMenu()
 	}
 }
 
 extension SMCSideMenuController
 {
-	@objc public func showMenu() {
+	@objc public func showMenu()
+    {
 		guard !isAnimating, !isMenuVisible else { return }
 
 		isAnimating = true
@@ -251,16 +274,19 @@ extension SMCSideMenuController
 		touchView.isHidden = false
 		tableView.scrollsToTop = true
 
-		let animationsHandler: () -> Void = {
+		let animationsHandler: () -> Void =
+        {
 			[unowned self] in
 			var frame: CGRect = self.containerView.frame
 			frame.origin.x = self.sideMenuWidth
 			self.containerView.frame = frame
 		}
-		let completionHandler: (Bool) -> Void = {
+		let completionHandler: (Bool) -> Void =
+        {
 			[unowned self] (finished: Bool) in
 			self.isAnimating = false
-			if let viewController = self.currentViewController {
+			if let viewController = self.currentViewController
+            {
 				self.delegate.sideMenu(self, didShowMenu: viewController)
 			}
 			NotificationCenter.default.post(name: Notification.Name.SMCSideMenu.ShowSideMenu, object: nil)
@@ -271,11 +297,13 @@ extension SMCSideMenuController
 		)
 	}
 
-	public func hideMenu() {
+	public func hideMenu()
+    {
 		hideMenu(withDuration: kRevealAnimationSpeed, delay: 0.0)
 	}
 
-	func hideMenu(withDuration duration: TimeInterval, delay: TimeInterval) {
+	func hideMenu(withDuration duration: TimeInterval, delay: TimeInterval)
+    {
 		guard !isAnimating, isMenuVisible else { return }
 
 		isAnimating = true
@@ -284,16 +312,19 @@ extension SMCSideMenuController
 		touchView.isHidden = true
 		tableView.scrollsToTop = false
 
-		let animationsHandler: () -> Void = {
+		let animationsHandler: () -> Void =
+        {
 			[unowned self] in
 			var frame: CGRect = self.containerView.frame
 			frame.origin = CGPoint.zero
 			self.containerView.frame = frame
 		}
-		let completionHandler: (Bool) -> Void = {
+		let completionHandler: (Bool) -> Void =
+        {
 			[unowned self] (finished: Bool) in
 			self.isAnimating = false
-			if let viewController = self.currentViewController {
+			if let viewController = self.currentViewController
+            {
 				self.delegate.sideMenu(self, didHideMenu: viewController)
 			}
 			NotificationCenter.default.post(name: Notification.Name.SMCSideMenu.HideSideMenu, object: nil)
@@ -305,14 +336,16 @@ extension SMCSideMenuController
 									 completion: completionHandler)
 	}
 
-	func setRootViewController(_ viewController: UIViewController) {
+	func setRootViewController(_ viewController: UIViewController)
+    {
 		self.addChild(viewController)
 		viewController.didMove(toParent: self)
 
 		// Reset the frame view
 		viewController.view.frame = self.containerView.bounds
 
-		let animationsHandler: () -> Void = {
+		let animationsHandler: () -> Void =
+        {
 			[unowned self] in
 			// Remove the old view controller
 			self.currentViewController?.willMove(toParent: nil)
@@ -321,7 +354,8 @@ extension SMCSideMenuController
 			// Reset the pointer
 			self.currentViewController = viewController
 		}
-		let completionHandler: (Bool) -> Void = {
+		let completionHandler: (Bool) -> Void =
+        {
 			[unowned self] (finished: Bool) in
 			// Hide the menu
 			let kHideMenuDelay: TimeInterval = 0.2
@@ -338,14 +372,18 @@ extension SMCSideMenuController
 		self.performExtension(with: viewController)
 	}
 
-	private func performExtension(with viewController: UIViewController) {
+	private func performExtension(with viewController: UIViewController)
+    {
 		// Call the original selector if exists
-		if viewController.isKind(of: UINavigationController.self) {
-			if let navigationController = viewController as? UINavigationController {
+		if viewController.isKind(of: UINavigationController.self)
+        {
+			if let navigationController = viewController as? UINavigationController
+            {
 				navigationController.topViewController?.sideMenu(didSelect: viewController)
 			}
 		}
-		else {
+		else
+        {
 			viewController.sideMenu(didSelect: viewController)
 		}
 	}
@@ -354,15 +392,18 @@ extension SMCSideMenuController
 // MARK: - UITableViewDataSource
 extension SMCSideMenuController: UITableViewDataSource
 {
-	public func numberOfSections(in tableView: UITableView) -> Int {
+	public func numberOfSections(in tableView: UITableView) -> Int
+    {
 		return delegate.numberOfSections(in: self)
 	}
 
-	public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
 		return delegate.sideMenu(self, numberOfRowsInSection:section)
 	}
 
-	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
 		let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: kSideMenuTableViewCellIdentifier, for: indexPath)
 		cell.selectionStyle = .default
 		cell.accessoryType = .none
@@ -373,7 +414,8 @@ extension SMCSideMenuController: UITableViewDataSource
 		return delegate.sideMenu(self, configure: cell, forRowAt: indexPath)
 	}
 
-	public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+	public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
+    {
 		let height = delegate.sideMenu(self, heightForHeaderInSection: section)
 		return height < 0.0 ? kSectionHeaderLabelHeight : height
 	}
@@ -382,44 +424,58 @@ extension SMCSideMenuController: UITableViewDataSource
 // MARK: - UITableViewDelegate
 extension SMCSideMenuController: UITableViewDelegate
 {
-	public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+	public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
+    {
 		cell.separatorInset = .zero
 		delegate.sideMenu(self, willDisplay: cell, forRowAt: indexPath)
 	}
 
-	public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-		if let headerView = view as? SideMenuHeader {
-			if let color = delegate.textColorOfHeader(in: section) {
+	public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
+    {
+		if let headerView = view as? SideMenuHeader
+        {
+			if let color = delegate.textColorOfHeader(in: section)
+            {
 				headerView.titleLabel.textColor = color
 			}
-			if let color = delegate.backgroundColorOfHeader(in: section) {
+			if let color = delegate.backgroundColorOfHeader(in: section)
+            {
 				headerView.contentView.backgroundColor = color
 			}
 		}
 	}
 
-	public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-		if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: kSideMenuHeaderIdentifier) as? SideMenuHeader {
+	public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+    {
+		if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: kSideMenuHeaderIdentifier) as? SideMenuHeader
+        {
 			headerView.titleLabel.text = delegate.sideMenu(self, titleForHeaderInSection: section)
 			return headerView
 		}
 		return nil
 	}
 
-	public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
 		delegate.sideMenu(self, didSelectRowAt: indexPath)
-		DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async {
-			autoreleasepool {
-				DispatchQueue.main.async {
+		DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async
+        {
+			autoreleasepool
+            {
+				DispatchQueue.main.async
+                {
 					[weak self] in
-					if let weakSelf = self {
+					if let weakSelf = self
+                    {
 						let viewController: UIViewController = weakSelf.delegate.sideMenu(weakSelf, viewControllerForRowAt: indexPath)
 						// Add the view controller as a child
 						if let currentViewController = weakSelf.currentViewController,
-							 currentViewController == viewController {
+							 currentViewController == viewController
+                        {
 							weakSelf.hideMenu()
 						}
-						else {
+						else
+                        {
 							weakSelf.setRootViewController(viewController)
 						}
 					}
@@ -431,7 +487,8 @@ extension SMCSideMenuController: UITableViewDelegate
 
 extension SMCSideMenuController
 {
-	public func menuIcon(color: UIColor = .white) -> UIImage? {
+	public func menuIcon(color: UIColor = .white) -> UIImage?
+    {
 		let	 size: CGSize	= CGSize(width: 32.0, height: 32.0)
 		let opaque: Bool		= false
 		let	scale: CGFloat = 0.0
@@ -457,7 +514,8 @@ extension SMCSideMenuController
 		return image?.withRenderingMode(.alwaysOriginal)
 	}
 
-	public func menuButtonItem(iconColor: UIColor = .white) -> UIBarButtonItem {
+	public func menuButtonItem(iconColor: UIColor = .white) -> UIBarButtonItem
+    {
 		let image: UIImage? = menuIcon(color: iconColor)
 		let button: UIButton = UIButton(type: .custom)
 		button.setImage(image, for: .normal)

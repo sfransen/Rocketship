@@ -83,7 +83,7 @@ class Results_ViewController: BaseViewController, WKNavigationDelegate
         Correct_label.backgroundColor = .clear
         Correct_label.textColor = .green
         Correct_label.textAlignment = NSTextAlignment.center
-        Correct_label.text = String(GradeOne_OneViewController.Global_Variables.COREECT_Count) + " Correct"
+        Correct_label.text = String(GradeOne_OneViewController.Global_Variables.CORRECT_Count) + " Correct"
         Correct_label.font = UIFont(name:"ChalkboardSE-Bold", size: 45.0)
         self.view.addSubview(Correct_label)
 

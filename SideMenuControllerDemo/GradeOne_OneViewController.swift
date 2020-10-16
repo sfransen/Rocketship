@@ -143,7 +143,7 @@ class GradeOne_OneViewController: BaseViewController
     func Percents()
     {
         let numberGlobal : Double = Double(Global_Variables.TOTAL_Count)
-        let numberCorrect : Double = Double(Global_Variables.COREECT_Count)
+        let numberCorrect : Double = Double(Global_Variables.CORRECT_Count)
         let PercentIS : Double = ( numberCorrect / numberGlobal ) * 1000
         let FourPlaces = (PercentIS.rounded(.toNearestOrEven) / 100) * 10
         let THEREALPercent = NSString(format: "%.2f", FourPlaces)
@@ -151,7 +151,7 @@ class GradeOne_OneViewController: BaseViewController
         print("Total " + String(numberGlobal))
         print("Percent " + String(PercentIS))
         Global_Variables.Global_Percents = THEREALPercent as String
-        
+
         let Percent_label: UILabel = UILabel()
         Percent_label.frame = CGRect(x: 300, y: 660, width: 500, height: 70)
         Percent_label.backgroundColor = .clear
@@ -164,10 +164,10 @@ class GradeOne_OneViewController: BaseViewController
 	func End_of_Table()
 	{
 		let numberGlobal : Int = Global_Variables.TOTAL_Count
-		let numberCorrect : Int = Global_Variables.COREECT_Count
+		let numberCorrect : Int = Global_Variables.CORRECT_Count
 		let PercentIS : Int = numberCorrect / numberGlobal
 		let TheTable = "<thead></table>"
-		let Last_Row = "<center><h1>Total Problems: <font = color = 'purple'>" + String(Global_Variables.TOTAL_Count) + "</font><br>Correct Numbers: <font = color = 'green'>" + String(Global_Variables.COREECT_Count) + "</font><br>Wrong Numbers: <font = color = 'red'>" + String(Global_Variables.WRONG_Count) + "</font><br>Percent: <font = color = 'brown'>" + String(PercentIS) + "%</font></h1></center>\n"
+		let Last_Row = "<center><h1>Total Problems: <font = color = 'purple'>" + String(Global_Variables.TOTAL_Count) + "</font><br>Correct Numbers: <font = color = 'green'>" + String(Global_Variables.CORRECT_Count) + "</font><br>Wrong Numbers: <font = color = 'red'>" + String(Global_Variables.WRONG_Count) + "</font><br>Percent: <font = color = 'brown'>" + String(PercentIS) + "%</font></h1></center>\n"
 		let THEEND = "<thead></table><html>\n"
 		let THEENDING = TheTable + Last_Row + THEEND
 
@@ -216,7 +216,7 @@ class GradeOne_OneViewController: BaseViewController
 		static var Global_Question = ""
 		static var Global_WrongAnswer = ""
 		static var Global_Correct_Answer = ""
-		static var COREECT_Count = 0
+		static var CORRECT_Count = 0
 		static var WRONG_Count = 0
 		static var TOTAL_Count = 0
 		static var THEUSER = "Aila Fransen"
@@ -331,7 +331,7 @@ class GradeOne_OneViewController: BaseViewController
 		Correct_label.backgroundColor = .clear
 		Correct_label.textColor = .green
 		Correct_label.textAlignment = NSTextAlignment.center
-		Correct_label.text = String(Global_Variables.COREECT_Count)
+		Correct_label.text = String(Global_Variables.CORRECT_Count)
 		Correct_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(Correct_label)
 
@@ -504,8 +504,8 @@ class GradeOne_OneViewController: BaseViewController
 		{
 			print("Correct")
 			Correct()
-			let TheNewCorrect_Number : Int = Global_Variables.COREECT_Count + 1
-			Global_Variables.COREECT_Count = TheNewCorrect_Number
+			let TheNewCorrect_Number : Int = Global_Variables.CORRECT_Count + 1
+			Global_Variables.CORRECT_Count = TheNewCorrect_Number
 			Global_Variables.Global_WrongAnswer = ""
 		}
 		else

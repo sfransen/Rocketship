@@ -18,7 +18,6 @@ func RandomNumber() -> (String)
 	return str1
 }
 
-
 func RandomQuestion() -> (String, String)
 {
 	let numberOne = Int.random(in: 1..<20)
@@ -38,7 +37,6 @@ func RandomQuestion() -> (String, String)
 
 class GradeOne_OneViewController: BaseViewController
 {
-
     //func setActionImageviewNG()
 	//{
     //    let imageName = "Save.png"
@@ -222,6 +220,7 @@ class GradeOne_OneViewController: BaseViewController
 		static var THEUSER = "Aila Fransen"
 		static var TheTitle = "Grade 1 Additions"
 	}
+    
 	func Save_Image()
 	{
 		let screenSize: CGRect = UIScreen.main.bounds
@@ -284,6 +283,7 @@ class GradeOne_OneViewController: BaseViewController
 
 		self.title = "Grade 1 Additions"
 	}
+    
 	func removeSubview()
 	{
 		print("Start remove sibview")
@@ -297,6 +297,7 @@ class GradeOne_OneViewController: BaseViewController
 			print("No!")
 		}
 	}
+    
 	override func didReceiveMemoryWarning()
 	{
 		super.didReceiveMemoryWarning()
@@ -307,6 +308,7 @@ class GradeOne_OneViewController: BaseViewController
 	{
 		super.loadView()
 	}
+    
 	func Create_Total_Label()
 	{
 		let total_label: UILabel = UILabel()
@@ -324,6 +326,7 @@ class GradeOne_OneViewController: BaseViewController
 		imageView.frame = CGRect(x: 660, y: 520, width: 60, height: 60)
 		self.view.addSubview(imageView)
 	}
+    
 	func Create_Correct_Label()
 	{
 		let Correct_label: UILabel = UILabel()
@@ -340,8 +343,8 @@ class GradeOne_OneViewController: BaseViewController
 		let imageView = UIImageView(image: image!)
 		imageView.frame = CGRect(x: 480, y: 520, width: 60, height: 60)
 		self.view.addSubview(imageView)
-
 	}
+    
 	func Create_Wrong_Label()
 	{
 		let Wrong_label: UILabel = UILabel()
@@ -359,6 +362,7 @@ class GradeOne_OneViewController: BaseViewController
 		imageView.frame = CGRect(x: 280, y: 520, width: 60, height: 60)
 		self.view.addSubview(imageView)
 	}
+    
 	func Create_New_Problem() -> (String)
 	{
 		let THISDATA = RandomQuestion2()
@@ -454,10 +458,12 @@ class GradeOne_OneViewController: BaseViewController
         //setActionImageviewNG()
 		return REALAnswer
 	}
+    
     //@objc func imageViewAction(sender:UITapGestureRecognizer)
     //{
     //    print("Imageview Clicked")
     //}
+    
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
@@ -537,6 +543,7 @@ class GradeOne_OneViewController: BaseViewController
 		correct.font = UIFont(name:"ChalkboardSE-Bold", size: 70.0)
 		self.view.addSubview(correct)
 	}
+    
 	func Correct()
 	{
 		let correct: UILabel = UILabel()
@@ -548,6 +555,7 @@ class GradeOne_OneViewController: BaseViewController
 		correct.font = UIFont(name:"ChalkboardSE-Bold", size: 70.0)
 		self.view.addSubview(correct)
 	}
+    
 	func Wrong()
 	{
 		let wrong: UILabel = UILabel()

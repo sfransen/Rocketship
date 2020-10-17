@@ -24,23 +24,26 @@
 /* Begin PBXBuildFile section */
 		6B4169112539483D006DC755 /* Results.html in Resources */ = {isa = PBXBuildFile; fileRef = 6B4169102539483D006DC755 /* Results.html */; };
 		6B41691525394C83006DC755 /* Save.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41691425394C83006DC755 /* Save.png */; };
-		6BBF4A202536A695007DDE1F /* GradeFive_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A0F2536A695007DDE1F /* GradeFive_ThreeViewController.swift */; };
-		6BBF4A212536A695007DDE1F /* GradeOne_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A102536A695007DDE1F /* GradeOne_TwoViewController.swift */; };
-		6BBF4A222536A695007DDE1F /* GradeFive_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A112536A695007DDE1F /* GradeFive_OneViewController.swift */; };
-		6BBF4A232536A695007DDE1F /* GradeTwo_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A122536A695007DDE1F /* GradeTwo_ThreeViewController.swift */; };
-		6BBF4A242536A695007DDE1F /* GradeThree_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A132536A695007DDE1F /* GradeThree_OneViewController.swift */; };
-		6BBF4A252536A695007DDE1F /* GradeFour_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A142536A695007DDE1F /* GradeFour_TwoViewController.swift */; };
-		6BBF4A262536A695007DDE1F /* GradeTwo_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A152536A695007DDE1F /* GradeTwo_TwoViewController.swift */; };
-		6BBF4A272536A695007DDE1F /* GradeOne_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A162536A695007DDE1F /* GradeOne_ThreeViewController.swift */; };
-		6BBF4A282536A695007DDE1F /* GradeFour_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A172536A695007DDE1F /* GradeFour_OneViewController.swift */; };
-		6BBF4A292536A695007DDE1F /* GradeThree_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A182536A695007DDE1F /* GradeThree_TwoViewController.swift */; };
-		6BBF4A2A2536A695007DDE1F /* GradeFive_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A192536A695007DDE1F /* GradeFive_TwoViewController.swift */; };
-		6BBF4A2B2536A695007DDE1F /* GradeOne_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A1A2536A695007DDE1F /* GradeOne_OneViewController.swift */; };
+		6B416955253A2C28006DC755 /* GradeFour_FIveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416942253A2C27006DC755 /* GradeFour_FIveViewController.swift */; };
+		6B416956253A2C28006DC755 /* GradeFive_FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416943253A2C27006DC755 /* GradeFive_FourViewController.swift */; };
+		6B416957253A2C28006DC755 /* GradeFour_FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416944253A2C27006DC755 /* GradeFour_FourViewController.swift */; };
+		6B416958253A2C28006DC755 /* GradeFive_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416945253A2C27006DC755 /* GradeFive_TwoViewController.swift */; };
+		6B416959253A2C28006DC755 /* GradeThree_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416946253A2C27006DC755 /* GradeThree_OneViewController.swift */; };
+		6B41695A253A2C28006DC755 /* GradeThree_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416947253A2C27006DC755 /* GradeThree_ThreeViewController.swift */; };
+		6B41695B253A2C28006DC755 /* GradeThree_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416948253A2C27006DC755 /* GradeThree_TwoViewController.swift */; };
+		6B41695C253A2C28006DC755 /* GradeFive_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416949253A2C27006DC755 /* GradeFive_ThreeViewController.swift */; };
+		6B41695D253A2C28006DC755 /* GradeOne_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41694A253A2C27006DC755 /* GradeOne_OneViewController.swift */; };
+		6B41695E253A2C28006DC755 /* GradeOne_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41694B253A2C28006DC755 /* GradeOne_TwoViewController.swift */; };
+		6B41695F253A2C28006DC755 /* GradeTwo_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41694C253A2C28006DC755 /* GradeTwo_ThreeViewController.swift */; };
+		6B416960253A2C28006DC755 /* GradeFive_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41694D253A2C28006DC755 /* GradeFive_OneViewController.swift */; };
+		6B416961253A2C28006DC755 /* GradeFour_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41694E253A2C28006DC755 /* GradeFour_ThreeViewController.swift */; };
+		6B416962253A2C28006DC755 /* GradeTwo_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41694F253A2C28006DC755 /* GradeTwo_OneViewController.swift */; };
+		6B416963253A2C28006DC755 /* GradeFour_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416950253A2C28006DC755 /* GradeFour_TwoViewController.swift */; };
+		6B416964253A2C28006DC755 /* GradeFive_FIveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416951253A2C28006DC755 /* GradeFive_FIveViewController.swift */; };
+		6B416965253A2C28006DC755 /* GradeTwo_TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416952253A2C28006DC755 /* GradeTwo_TwoViewController.swift */; };
+		6B416967253A2C28006DC755 /* GradeFour_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B416954253A2C28006DC755 /* GradeFour_OneViewController.swift */; };
 		6BBF4A2C2536A695007DDE1F /* Results_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A1B2536A695007DDE1F /* Results_ViewController.swift */; };
-		6BBF4A2D2536A695007DDE1F /* GradeFour_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A1C2536A695007DDE1F /* GradeFour_ThreeViewController.swift */; };
-		6BBF4A2E2536A695007DDE1F /* GradeThree_ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A1D2536A695007DDE1F /* GradeThree_ThreeViewController.swift */; };
 		6BBF4A2F2536A695007DDE1F /* Settings_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A1E2536A695007DDE1F /* Settings_ViewController.swift */; };
-		6BBF4A302536A695007DDE1F /* GradeTwo_OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF4A1F2536A695007DDE1F /* GradeTwo_OneViewController.swift */; };
 		6BBF4A612537DDEE007DDE1F /* blackboard2-landscale.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF4A5D2537B6BC007DDE1F /* blackboard2-landscale.png */; };
 		6BBF4A6A2537E446007DDE1F /* rocketship.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF4A662537E446007DDE1F /* rocketship.png */; };
 		6BBF4A6B2537E446007DDE1F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF4A672537E446007DDE1F /* logo.png */; };
@@ -98,23 +101,26 @@
 /* Begin PBXFileReference section */
 		6B4169102539483D006DC755 /* Results.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Results.html; path = SideMenuControllerDemo/Resources/Results.html; sourceTree = "<group>"; };
 		6B41691425394C83006DC755 /* Save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Save.png; path = SideMenuControllerDemo/Resources/Save.png; sourceTree = "<group>"; };
-		6BBF4A0F2536A695007DDE1F /* GradeFive_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_ThreeViewController.swift; sourceTree = "<group>"; };
-		6BBF4A102536A695007DDE1F /* GradeOne_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeOne_TwoViewController.swift; sourceTree = "<group>"; };
-		6BBF4A112536A695007DDE1F /* GradeFive_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_OneViewController.swift; sourceTree = "<group>"; };
-		6BBF4A122536A695007DDE1F /* GradeTwo_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTwo_ThreeViewController.swift; sourceTree = "<group>"; };
-		6BBF4A132536A695007DDE1F /* GradeThree_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeThree_OneViewController.swift; sourceTree = "<group>"; };
-		6BBF4A142536A695007DDE1F /* GradeFour_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_TwoViewController.swift; sourceTree = "<group>"; };
-		6BBF4A152536A695007DDE1F /* GradeTwo_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTwo_TwoViewController.swift; sourceTree = "<group>"; };
-		6BBF4A162536A695007DDE1F /* GradeOne_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeOne_ThreeViewController.swift; sourceTree = "<group>"; };
-		6BBF4A172536A695007DDE1F /* GradeFour_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_OneViewController.swift; sourceTree = "<group>"; };
-		6BBF4A182536A695007DDE1F /* GradeThree_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeThree_TwoViewController.swift; sourceTree = "<group>"; };
-		6BBF4A192536A695007DDE1F /* GradeFive_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_TwoViewController.swift; sourceTree = "<group>"; };
-		6BBF4A1A2536A695007DDE1F /* GradeOne_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeOne_OneViewController.swift; sourceTree = "<group>"; };
+		6B416942253A2C27006DC755 /* GradeFour_FIveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_FIveViewController.swift; sourceTree = "<group>"; };
+		6B416943253A2C27006DC755 /* GradeFive_FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_FourViewController.swift; sourceTree = "<group>"; };
+		6B416944253A2C27006DC755 /* GradeFour_FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_FourViewController.swift; sourceTree = "<group>"; };
+		6B416945253A2C27006DC755 /* GradeFive_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_TwoViewController.swift; sourceTree = "<group>"; };
+		6B416946253A2C27006DC755 /* GradeThree_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeThree_OneViewController.swift; sourceTree = "<group>"; };
+		6B416947253A2C27006DC755 /* GradeThree_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeThree_ThreeViewController.swift; sourceTree = "<group>"; };
+		6B416948253A2C27006DC755 /* GradeThree_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeThree_TwoViewController.swift; sourceTree = "<group>"; };
+		6B416949253A2C27006DC755 /* GradeFive_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_ThreeViewController.swift; sourceTree = "<group>"; };
+		6B41694A253A2C27006DC755 /* GradeOne_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeOne_OneViewController.swift; sourceTree = "<group>"; };
+		6B41694B253A2C28006DC755 /* GradeOne_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeOne_TwoViewController.swift; sourceTree = "<group>"; };
+		6B41694C253A2C28006DC755 /* GradeTwo_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTwo_ThreeViewController.swift; sourceTree = "<group>"; };
+		6B41694D253A2C28006DC755 /* GradeFive_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_OneViewController.swift; sourceTree = "<group>"; };
+		6B41694E253A2C28006DC755 /* GradeFour_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_ThreeViewController.swift; sourceTree = "<group>"; };
+		6B41694F253A2C28006DC755 /* GradeTwo_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTwo_OneViewController.swift; sourceTree = "<group>"; };
+		6B416950253A2C28006DC755 /* GradeFour_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_TwoViewController.swift; sourceTree = "<group>"; };
+		6B416951253A2C28006DC755 /* GradeFive_FIveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_FIveViewController.swift; sourceTree = "<group>"; };
+		6B416952253A2C28006DC755 /* GradeTwo_TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTwo_TwoViewController.swift; sourceTree = "<group>"; };
+		6B416954253A2C28006DC755 /* GradeFour_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_OneViewController.swift; sourceTree = "<group>"; };
 		6BBF4A1B2536A695007DDE1F /* Results_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results_ViewController.swift; sourceTree = "<group>"; };
-		6BBF4A1C2536A695007DDE1F /* GradeFour_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_ThreeViewController.swift; sourceTree = "<group>"; };
-		6BBF4A1D2536A695007DDE1F /* GradeThree_ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeThree_ThreeViewController.swift; sourceTree = "<group>"; };
 		6BBF4A1E2536A695007DDE1F /* Settings_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings_ViewController.swift; sourceTree = "<group>"; };
-		6BBF4A1F2536A695007DDE1F /* GradeTwo_OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTwo_OneViewController.swift; sourceTree = "<group>"; };
 		6BBF4A372536A98F007DDE1F /* SideMenuControllerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SideMenuControllerDemo.entitlements; sourceTree = "<group>"; };
 		6BBF4A5D2537B6BC007DDE1F /* blackboard2-landscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blackboard2-landscale.png"; path = "SideMenuControllerDemo/Resources/blackboard2-landscale.png"; sourceTree = "<group>"; };
 		6BBF4A662537E446007DDE1F /* rocketship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rocketship.png; path = SideMenuControllerDemo/Resources/rocketship.png; sourceTree = "<group>"; };
@@ -214,21 +220,24 @@
 			isa = PBXGroup;
 			children = (
 				6BBF4A372536A98F007DDE1F /* SideMenuControllerDemo.entitlements */,
-				6BBF4A112536A695007DDE1F /* GradeFive_OneViewController.swift */,
-				6BBF4A0F2536A695007DDE1F /* GradeFive_ThreeViewController.swift */,
-				6BBF4A192536A695007DDE1F /* GradeFive_TwoViewController.swift */,
-				6BBF4A172536A695007DDE1F /* GradeFour_OneViewController.swift */,
-				6BBF4A1C2536A695007DDE1F /* GradeFour_ThreeViewController.swift */,
-				6BBF4A142536A695007DDE1F /* GradeFour_TwoViewController.swift */,
-				6BBF4A1A2536A695007DDE1F /* GradeOne_OneViewController.swift */,
-				6BBF4A162536A695007DDE1F /* GradeOne_ThreeViewController.swift */,
-				6BBF4A102536A695007DDE1F /* GradeOne_TwoViewController.swift */,
-				6BBF4A132536A695007DDE1F /* GradeThree_OneViewController.swift */,
-				6BBF4A1D2536A695007DDE1F /* GradeThree_ThreeViewController.swift */,
-				6BBF4A182536A695007DDE1F /* GradeThree_TwoViewController.swift */,
-				6BBF4A1F2536A695007DDE1F /* GradeTwo_OneViewController.swift */,
-				6BBF4A122536A695007DDE1F /* GradeTwo_ThreeViewController.swift */,
-				6BBF4A152536A695007DDE1F /* GradeTwo_TwoViewController.swift */,
+				6B416951253A2C28006DC755 /* GradeFive_FIveViewController.swift */,
+				6B416943253A2C27006DC755 /* GradeFive_FourViewController.swift */,
+				6B41694D253A2C28006DC755 /* GradeFive_OneViewController.swift */,
+				6B416949253A2C27006DC755 /* GradeFive_ThreeViewController.swift */,
+				6B416945253A2C27006DC755 /* GradeFive_TwoViewController.swift */,
+				6B416942253A2C27006DC755 /* GradeFour_FIveViewController.swift */,
+				6B416944253A2C27006DC755 /* GradeFour_FourViewController.swift */,
+				6B416954253A2C28006DC755 /* GradeFour_OneViewController.swift */,
+				6B41694E253A2C28006DC755 /* GradeFour_ThreeViewController.swift */,
+				6B416950253A2C28006DC755 /* GradeFour_TwoViewController.swift */,
+				6B41694A253A2C27006DC755 /* GradeOne_OneViewController.swift */,
+				6B41694B253A2C28006DC755 /* GradeOne_TwoViewController.swift */,
+				6B416946253A2C27006DC755 /* GradeThree_OneViewController.swift */,
+				6B416947253A2C27006DC755 /* GradeThree_ThreeViewController.swift */,
+				6B416948253A2C27006DC755 /* GradeThree_TwoViewController.swift */,
+				6B41694F253A2C28006DC755 /* GradeTwo_OneViewController.swift */,
+				6B41694C253A2C28006DC755 /* GradeTwo_ThreeViewController.swift */,
+				6B416952253A2C28006DC755 /* GradeTwo_TwoViewController.swift */,
 				6BBF4A1B2536A695007DDE1F /* Results_ViewController.swift */,
 				6BBF4A1E2536A695007DDE1F /* Settings_ViewController.swift */,
 				B355FDBA221BEA3800651ECE /* BaseViewController.swift */,
@@ -436,26 +445,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BBF4A242536A695007DDE1F /* GradeThree_OneViewController.swift in Sources */,
-				6BBF4A282536A695007DDE1F /* GradeFour_OneViewController.swift in Sources */,
+				6B41695F253A2C28006DC755 /* GradeTwo_ThreeViewController.swift in Sources */,
+				6B416967253A2C28006DC755 /* GradeFour_OneViewController.swift in Sources */,
+				6B41695D253A2C28006DC755 /* GradeOne_OneViewController.swift in Sources */,
+				6B416959253A2C28006DC755 /* GradeThree_OneViewController.swift in Sources */,
+				6B416958253A2C28006DC755 /* GradeFive_TwoViewController.swift in Sources */,
+				6B416960253A2C28006DC755 /* GradeFive_OneViewController.swift in Sources */,
+				6B416963253A2C28006DC755 /* GradeFour_TwoViewController.swift in Sources */,
+				6B416955253A2C28006DC755 /* GradeFour_FIveViewController.swift in Sources */,
+				6B416962253A2C28006DC755 /* GradeTwo_OneViewController.swift in Sources */,
 				B3B7F280221AA382005A3BD0 /* AppDelegate.swift in Sources */,
+				6B41695A253A2C28006DC755 /* GradeThree_ThreeViewController.swift in Sources */,
 				6BBF4A2F2536A695007DDE1F /* Settings_ViewController.swift in Sources */,
-				6BBF4A2D2536A695007DDE1F /* GradeFour_ThreeViewController.swift in Sources */,
-				6BBF4A2B2536A695007DDE1F /* GradeOne_OneViewController.swift in Sources */,
-				6BBF4A222536A695007DDE1F /* GradeFive_OneViewController.swift in Sources */,
-				6BBF4A2E2536A695007DDE1F /* GradeThree_ThreeViewController.swift in Sources */,
-				6BBF4A302536A695007DDE1F /* GradeTwo_OneViewController.swift in Sources */,
-				6BBF4A272536A695007DDE1F /* GradeOne_ThreeViewController.swift in Sources */,
-				6BBF4A202536A695007DDE1F /* GradeFive_ThreeViewController.swift in Sources */,
 				6BBF4A2C2536A695007DDE1F /* Results_ViewController.swift in Sources */,
-				6BBF4A292536A695007DDE1F /* GradeThree_TwoViewController.swift in Sources */,
-				6BBF4A2A2536A695007DDE1F /* GradeFive_TwoViewController.swift in Sources */,
-				6BBF4A262536A695007DDE1F /* GradeTwo_TwoViewController.swift in Sources */,
 				B355FDB9221BEA3200651ECE /* SideMenu.swift in Sources */,
-				6BBF4A232536A695007DDE1F /* GradeTwo_ThreeViewController.swift in Sources */,
-				6BBF4A252536A695007DDE1F /* GradeFour_TwoViewController.swift in Sources */,
-				6BBF4A212536A695007DDE1F /* GradeOne_TwoViewController.swift in Sources */,
+				6B416964253A2C28006DC755 /* GradeFive_FIveViewController.swift in Sources */,
+				6B41695B253A2C28006DC755 /* GradeThree_TwoViewController.swift in Sources */,
+				6B41695C253A2C28006DC755 /* GradeFive_ThreeViewController.swift in Sources */,
 				B355FDBB221BEA3800651ECE /* BaseViewController.swift in Sources */,
+				6B416957253A2C28006DC755 /* GradeFour_FourViewController.swift in Sources */,
+				6B41695E253A2C28006DC755 /* GradeOne_TwoViewController.swift in Sources */,
+				6B416956253A2C28006DC755 /* GradeFive_FourViewController.swift in Sources */,
+				6B416965253A2C28006DC755 /* GradeTwo_TwoViewController.swift in Sources */,
+				6B416961253A2C28006DC755 /* GradeFour_ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

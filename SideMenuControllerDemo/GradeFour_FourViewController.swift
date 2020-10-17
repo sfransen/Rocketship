@@ -1,28 +1,54 @@
+
 import UIKit
 
-class GradeFive_TwoViewController: BaseViewController
+class GradeFour_FourViewController: BaseViewController
 {
 	//@objc func imageViewAction(sender:UITapGestureRecognizer)
 	//{
 	//	print("Imageview Clicked")
 	//}
-
 	override func setup()
 	{
 		super.setup()
 
-		self.title = "Grade 5 Subtraction"
-        AppDelegate.Global_Variables.TheTitle = "Grade 5 Subtraction"
+		self.title = "Grade 4 Rounding"
+        AppDelegate.Global_Variables.TheTitle = "Grade 4 Rounding"
+	}
+
+	func RandomNumber() -> (String)
+	{
+		let numberOne = Int.random(in: 150..<3000)
+		var str1 = "";
+		str1 = String(numberOne)
+		//print(str2)
+		return str1
+	}
+
+	func RandomQuestion() -> (String, String)
+	{
+		let numberOne = Int.random(in: 150..<3000)
+		let numberTwo = Int.random(in: 150..<3000)
+		let multi = " * "
+		var str1 = "";
+
+		str1.addString(str: String(numberOne))
+		str1.addString(str: multi)
+		str1.addString(str: String(numberTwo))
+		str1.addString(str: " = ?")
+		let TheQuestion = str1
+		let TheAnwser : Int = numberOne * numberTwo
+		let str2 = String(TheAnwser)
+		return (TheQuestion, str2)
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
 	{
-		let numberOne = Int.random(in: 150..<9000)
-		let numberTwo = Int.random(in: 150..<9000)
+		let numberOne = Int.random(in: 150..<3000)
+		let numberTwo = Int.random(in: 150..<3000)
 		let numberThree : Int = numberOne - 1
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2
-		let multi = " - "
+		let multi = " + "
 
 		var str1 = "";
 		str1.addString(str: String(numberOne))
@@ -32,22 +58,22 @@ class GradeFive_TwoViewController: BaseViewController
 		let TheQuestion = str1
 		print(TheQuestion)
 
-		let TheAnwser : Int = numberOne - numberTwo
-		var TheBadOne : Int = numberThree - numberOne + 2
-		var TheBadTwo : Int = numberFour - numberOne + 3
-		var TheBadThree : Int = numberFive - numberOne + 4
+		let TheAnwser : Int = numberOne + numberTwo
+		var TheBadOne : Int = numberThree + numberOne + 2
+		var TheBadTwo : Int = numberFour + numberOne + 3
+		var TheBadThree : Int = numberFive + numberOne + 4
 
 		if ( TheAnwser == TheBadOne )
 		{
-			TheBadOne = numberThree - numberTwo
+			TheBadOne = numberThree + numberTwo
 		}
 		if ( TheAnwser == TheBadTwo )
 		{
-			TheBadTwo = numberFour - numberOne + 2
+			TheBadTwo = numberFour + numberOne + 2
 		}
 		if ( TheAnwser == TheBadThree )
 		{
-			TheBadThree = numberFive - numberOne + 2
+			TheBadThree = numberFive + numberOne + 2
 		}
 		let str2 = String(TheAnwser)
 		let str3 = String(TheBadOne)
@@ -253,7 +279,7 @@ class GradeFive_TwoViewController: BaseViewController
 		ViewTitle.backgroundColor = .clear
 		ViewTitle.textColor = .white
 		ViewTitle.textAlignment = NSTextAlignment.center
-		ViewTitle.text = "Grade 5 Subtraction Problems"
+		ViewTitle.text = "Grade 4 Rounding Problems"
 		ViewTitle.font = UIFont(name:"ChalkboardSE-Bold", size: 40.0)
 		self.view.addSubview(ViewTitle)
 
@@ -466,3 +492,4 @@ class GradeFive_TwoViewController: BaseViewController
 		}
 	}
 }
+

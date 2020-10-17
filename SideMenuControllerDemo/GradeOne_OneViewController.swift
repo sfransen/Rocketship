@@ -9,50 +9,58 @@ extension String
 	}
 }
 
-func RandomNumber() -> (String)
-{
-	let numberOne = Int.random(in: 1..<20)
-	var str1 = "";
-	str1 = String(numberOne)
-	//print(str2)
-	return str1
-}
-
-func RandomQuestion() -> (String, String)
-{
-	let numberOne = Int.random(in: 1..<20)
-	let numberTwo = Int.random(in: 1..<20)
-	let multi = " * "
-	var str1 = "";
-
-	str1.addString(str: String(numberOne))
-	str1.addString(str: multi)
-	str1.addString(str: String(numberTwo))
-	str1.addString(str: " = ?")
-	let TheQuestion = str1
-	let TheAnwser : Int = numberOne * numberTwo
-	let str2 = String(TheAnwser)
-	return (TheQuestion, str2)
-}
-
 class GradeOne_OneViewController: BaseViewController
 {
-    //func setActionImageviewNG()
+	//func setActionImageviewNG()
 	//{
-    //    let imageName = "Save.png"
-    //    let image = UIImage(named: imageName)
-    //    let imageviewObject = UIImageView(image: image!)
-    //    imageviewObject.image = UIImage.init(named: "Save.png")
+	//	let imageName = "Save.png"
+	//	let image = UIImage(named: imageName)
+	//	let imageviewObject = UIImageView(image: image!)
+	//	imageviewObject.image = UIImage.init(named: "Save.png")
 	//	imageviewObject.isUserInteractionEnabled = true
 	//	imageviewObject.isMultipleTouchEnabled = true
 	//	let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.imageViewAction(sender:)))
 	//	imageviewObject.addGestureRecognizer(tapGestureRecognizer)
 	//}
 
+	override func setup()
+	{
+		super.setup()
+
+		self.title = "Grade 1 Additions"
+        AppDelegate.Global_Variables.TheTitle = "Grade 1 Additions"
+	}
+
+	func RandomNumber() -> (String)
+	{
+		let numberOne = Int.random(in: 1..<10)
+		var str1 = "";
+		str1 = String(numberOne)
+		//print(str2)
+		return str1
+	}
+
+	func RandomQuestion() -> (String, String)
+	{
+		let numberOne = Int.random(in: 1..<10)
+		let numberTwo = Int.random(in: 1..<10)
+		let multi = " * "
+		var str1 = "";
+
+		str1.addString(str: String(numberOne))
+		str1.addString(str: multi)
+		str1.addString(str: String(numberTwo))
+		str1.addString(str: " = ?")
+		let TheQuestion = str1
+		let TheAnwser : Int = numberOne * numberTwo
+		let str2 = String(TheAnwser)
+		return (TheQuestion, str2)
+	}
+
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
 	{
-		let numberOne = Int.random(in: 1..<20)
-		let numberTwo = Int.random(in: 1..<20)
+		let numberOne = Int.random(in: 1..<10)
+		let numberTwo = Int.random(in: 1..<10)
 		let numberThree : Int = numberOne - 1
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2
@@ -93,7 +101,7 @@ class GradeOne_OneViewController: BaseViewController
 		print("str4: " + str4)
 		print("str5: " + str5)
 
-		Global_Variables.Global_Question = TheQuestion
+		AppDelegate.Global_Variables.Global_Question = TheQuestion
 
 		let THELOCATION_INDEX = Int.random(in: 1..<5)
 		print("THELOCATION_INDEX: " + String(THELOCATION_INDEX))
@@ -116,111 +124,27 @@ class GradeOne_OneViewController: BaseViewController
 		let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
 		return paths[0]
 	}
-	func Append_To_File()
+	func Percents()
 	{
-		var TheString = ""
-		if ( Global_Variables.Global_WrongAnswer == "" )
-		{
-			TheString = "<font color = 'green'>" + String(Global_Variables.Global_Correct_Answer)
-		}
-		else
-		{
-			TheString = "<font color = 'red'>" + String(Global_Variables.Global_WrongAnswer)
-		}
+		let numberGlobal : Double = Double(AppDelegate.Global_Variables.TOTAL_Count)
+		let numberCorrect : Double = Double(AppDelegate.Global_Variables.CORRECT_Count)
+		let PercentIS : Double = ( numberCorrect / numberGlobal ) * 1000
+		let FourPlaces = (PercentIS.rounded(.toNearestOrEven) / 100) * 10
+		let THEREALPercent = NSString(format: "%.2f", FourPlaces)
+		print("Correct " + String(numberCorrect))
+		print("Total " + String(numberGlobal))
+		print("Percent " + String(PercentIS))
+		AppDelegate.Global_Variables.Global_Percents = THEREALPercent as String
 
-		let str = "<tr><th>" + String(Global_Variables.TOTAL_Count) + "</th><th>" + String(Global_Variables.Global_Question) + "</th><th>" + String(Global_Variables.Global_Correct_Answer) + "</th><th>" +  TheString + "</font></th></tr>\n"
-		let data = Data(str.utf8)
-		let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
-
-		if let fileHandle = FileHandle(forWritingAtPath: filename.path)
-		{
-			fileHandle.seekToEndOfFile()
-			fileHandle.write(data)
-		}
+		let Percent_label: UILabel = UILabel()
+		Percent_label.frame = CGRect(x: 300, y: 660, width: 500, height: 70)
+		Percent_label.backgroundColor = .clear
+		Percent_label.textColor = .blue
+		Percent_label.textAlignment = NSTextAlignment.center
+		Percent_label.text = String(THEREALPercent) + "%"
+		Percent_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
+		self.view.addSubview(Percent_label)
 	}
-    func Percents()
-    {
-        let numberGlobal : Double = Double(Global_Variables.TOTAL_Count)
-        let numberCorrect : Double = Double(Global_Variables.CORRECT_Count)
-        let PercentIS : Double = ( numberCorrect / numberGlobal ) * 1000
-        let FourPlaces = (PercentIS.rounded(.toNearestOrEven) / 100) * 10
-        let THEREALPercent = NSString(format: "%.2f", FourPlaces)
-        print("Correct " + String(numberCorrect))
-        print("Total " + String(numberGlobal))
-        print("Percent " + String(PercentIS))
-        Global_Variables.Global_Percents = THEREALPercent as String
-
-        let Percent_label: UILabel = UILabel()
-        Percent_label.frame = CGRect(x: 300, y: 660, width: 500, height: 70)
-        Percent_label.backgroundColor = .clear
-        Percent_label.textColor = .blue
-        Percent_label.textAlignment = NSTextAlignment.center
-        Percent_label.text = String(THEREALPercent) + "%"
-        Percent_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
-        self.view.addSubview(Percent_label)
-    }
-	func End_of_Table()
-	{
-		let numberGlobal : Int = Global_Variables.TOTAL_Count
-		let numberCorrect : Int = Global_Variables.CORRECT_Count
-		let PercentIS : Int = numberCorrect / numberGlobal
-		let TheTable = "<thead></table>"
-		let Last_Row = "<center><h1>Total Problems: <font = color = 'purple'>" + String(Global_Variables.TOTAL_Count) + "</font><br>Correct Numbers: <font = color = 'green'>" + String(Global_Variables.CORRECT_Count) + "</font><br>Wrong Numbers: <font = color = 'red'>" + String(Global_Variables.WRONG_Count) + "</font><br>Percent: <font = color = 'brown'>" + String(PercentIS) + "%</font></h1></center>\n"
-		let THEEND = "<thead></table><html>\n"
-		let THEENDING = TheTable + Last_Row + THEEND
-
-		let data = Data(THEENDING.utf8)
-		let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
-
-		if let fileHandle = FileHandle(forWritingAtPath: filename.path)
-		{
-			fileHandle.seekToEndOfFile()
-			fileHandle.write(data)
-		}
-	}
-	func Read_To_File()
-	{
-		let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
-
-		do
-		{
-			let text2 = try String(contentsOf: filename, encoding: .utf8)
-
-			print(text2)
-		}
-		catch
-		{
-			print("Failed to read from file")
-		}
-	}
-	func WriteTableHeader()
-	{
-		let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
-		do
-		{
-			let str = "<html><head><title>" + Global_Variables.THEUSER + " " + Global_Variables.TheTitle + "</title></head><body><br><br><br><br><br><br><center><h1>"
-			let str2 = Global_Variables.THEUSER + " " + Global_Variables.TheTitle + "</h1></center>\n<table style='width: 100%;' border='4' cellpadding='4'><tbody>\n<tr><th><b>#</b></th><th><b>Question</b></th><th><b>Correct Answer</b></th><th><b>Selected Answer</b></th></tr>\n"
-			let str3 = str + str2
-			try str3.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
-		}
-		catch
-		{
-			print("Failed to write to WriteTableHeader file")
-		}
-	}
-    struct Global_Variables
-	{
-        static var Global_Percents = ""
-		static var Global_Question = ""
-		static var Global_WrongAnswer = ""
-		static var Global_Correct_Answer = ""
-		static var CORRECT_Count = 0
-		static var WRONG_Count = 0
-		static var TOTAL_Count = 0
-		static var THEUSER = "Aila Fransen"
-		static var TheTitle = "Grade 1 Additions"
-	}
-    
 	func Save_Image()
 	{
 		let screenSize: CGRect = UIScreen.main.bounds
@@ -232,15 +156,15 @@ class GradeOne_OneViewController: BaseViewController
 
 		if ( WindowLength == 540 )
 		{
-            imageviewObject.frame = CGRect(x: 100, y:500, width: 100, height: 100)
+			imageviewObject.frame = CGRect(x: 100, y:500, width: 100, height: 100)
 		}
 		else if ( WindowLength == 1366 )
 		{
-            imageviewObject.frame = CGRect(x: 100, y:550, width: 100, height: 100)
+			imageviewObject.frame = CGRect(x: 100, y:550, width: 100, height: 100)
 		}
 		else
 		{
-            imageviewObject.frame = CGRect(x: 100, y:790, width: 100, height: 100)
+			imageviewObject.frame = CGRect(x: 100, y:790, width: 100, height: 100)
 		}
 
 		self.view.addSubview(imageviewObject)
@@ -277,13 +201,6 @@ class GradeOne_OneViewController: BaseViewController
 		self.view.bringSubviewToFront(imageView)
 	}
 
-	override func setup()
-	{
-		super.setup()
-
-		self.title = "Grade 1 Additions"
-	}
-    
 	func removeSubview()
 	{
 		print("Start remove sibview")
@@ -297,7 +214,7 @@ class GradeOne_OneViewController: BaseViewController
 			print("No!")
 		}
 	}
-    
+
 	override func didReceiveMemoryWarning()
 	{
 		super.didReceiveMemoryWarning()
@@ -308,7 +225,7 @@ class GradeOne_OneViewController: BaseViewController
 	{
 		super.loadView()
 	}
-    
+
 	func Create_Total_Label()
 	{
 		let total_label: UILabel = UILabel()
@@ -316,7 +233,7 @@ class GradeOne_OneViewController: BaseViewController
 		total_label.backgroundColor = .clear
 		total_label.textColor = .blue
 		total_label.textAlignment = NSTextAlignment.center
-		total_label.text = String(Global_Variables.TOTAL_Count)
+		total_label.text = String(AppDelegate.Global_Variables.TOTAL_Count)
 		total_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(total_label)
 
@@ -326,7 +243,7 @@ class GradeOne_OneViewController: BaseViewController
 		imageView.frame = CGRect(x: 660, y: 520, width: 60, height: 60)
 		self.view.addSubview(imageView)
 	}
-    
+
 	func Create_Correct_Label()
 	{
 		let Correct_label: UILabel = UILabel()
@@ -334,7 +251,7 @@ class GradeOne_OneViewController: BaseViewController
 		Correct_label.backgroundColor = .clear
 		Correct_label.textColor = .green
 		Correct_label.textAlignment = NSTextAlignment.center
-		Correct_label.text = String(Global_Variables.CORRECT_Count)
+		Correct_label.text = String(AppDelegate.Global_Variables.CORRECT_Count)
 		Correct_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(Correct_label)
 
@@ -344,7 +261,7 @@ class GradeOne_OneViewController: BaseViewController
 		imageView.frame = CGRect(x: 480, y: 520, width: 60, height: 60)
 		self.view.addSubview(imageView)
 	}
-    
+
 	func Create_Wrong_Label()
 	{
 		let Wrong_label: UILabel = UILabel()
@@ -352,7 +269,7 @@ class GradeOne_OneViewController: BaseViewController
 		Wrong_label.backgroundColor = .clear
 		Wrong_label.textColor = .red
 		Wrong_label.textAlignment = NSTextAlignment.center
-		Wrong_label.text = String(Global_Variables.WRONG_Count)
+		Wrong_label.text = String(AppDelegate.Global_Variables.WRONG_Count)
 		Wrong_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(Wrong_label)
 
@@ -362,7 +279,7 @@ class GradeOne_OneViewController: BaseViewController
 		imageView.frame = CGRect(x: 280, y: 520, width: 60, height: 60)
 		self.view.addSubview(imageView)
 	}
-    
+
 	func Create_New_Problem() -> (String)
 	{
 		let THISDATA = RandomQuestion2()
@@ -375,17 +292,17 @@ class GradeOne_OneViewController: BaseViewController
 		print(TheQuestion)
 
 		let ViewTitle: UILabel = UILabel()
-		ViewTitle.frame = CGRect(x: 250, y: 20, width: 500, height: 50)
+		ViewTitle.frame = CGRect(x: 0, y: 20, width: 1000, height: 60)
 		ViewTitle.backgroundColor = .clear
 		ViewTitle.textAlignment = NSTextAlignment.center
 		ViewTitle.backgroundColor = .clear
 		ViewTitle.textColor = .white
 		ViewTitle.textAlignment = NSTextAlignment.center
-		ViewTitle.text = "Additions Problems"
-		ViewTitle.font = UIFont(name:"ChalkboardSE-Bold", size: 50.0)
+		ViewTitle.text = "Grade 1 Additions Problems"
+		ViewTitle.font = UIFont(name:"ChalkboardSE-Bold", size: 40.0)
 		self.view.addSubview(ViewTitle)
 
-		let button1 = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+		let button1 = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 50))
 		button1.backgroundColor = .yellow
 		button1.setTitle(ButtonOneName, for: .normal)
 		button1.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -393,10 +310,10 @@ class GradeOne_OneViewController: BaseViewController
 		button1.layer.cornerRadius = 5
 		button1.layer.borderWidth = 1
 		button1.layer.borderColor = UIColor.red.cgColor
-		button1.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 40)
+		button1.titleLabel?.font =	UIFont(name: "ChalkboardSE-Bold", size: 40)
 		self.view.addSubview(button1)
 
-		let button2 = UIButton(frame: CGRect(x: 100, y: 200, width: 100, height: 50))
+		let button2 = UIButton(frame: CGRect(x: 100, y: 200, width: 200, height: 50))
 		button2.backgroundColor = .yellow
 		button2.setTitle(ButtonTwoName, for: .normal)
 		button2.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -404,10 +321,10 @@ class GradeOne_OneViewController: BaseViewController
 		button2.layer.cornerRadius = 5
 		button2.layer.borderWidth = 1
 		button2.layer.borderColor = UIColor.red.cgColor
-		button2.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 40)
+		button2.titleLabel?.font =	UIFont(name: "ChalkboardSE-Bold", size: 40)
 		self.view.addSubview(button2)
 
-		let button3 = UIButton(frame: CGRect(x: 100, y: 300, width: 100, height: 50))
+		let button3 = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 50))
 		button3.backgroundColor = .yellow
 		button3.setTitle(ButtonThreeName, for: .normal)
 		button3.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -415,10 +332,10 @@ class GradeOne_OneViewController: BaseViewController
 		button3.layer.cornerRadius = 5
 		button3.layer.borderWidth = 1
 		button3.layer.borderColor = UIColor.red.cgColor
-		button3.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 40)
+		button3.titleLabel?.font =	UIFont(name: "ChalkboardSE-Bold", size: 40)
 		self.view.addSubview(button3)
 
-		let button4 = UIButton(frame: CGRect(x: 100, y: 400, width: 100, height: 50))
+		let button4 = UIButton(frame: CGRect(x: 100, y: 400, width: 200, height: 50))
 		button4.backgroundColor = .yellow
 		button4.setTitle(ButtonFourName, for: .normal)
 		button4.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -426,44 +343,43 @@ class GradeOne_OneViewController: BaseViewController
 		button4.layer.cornerRadius = 5
 		button4.layer.borderWidth = 1
 		button4.layer.borderColor = UIColor.red.cgColor
-		button4.titleLabel?.font =  UIFont(name: "ChalkboardSE-Bold", size: 40)
+		button4.titleLabel?.font =	UIFont(name: "ChalkboardSE-Bold", size: 40)
 		self.view.addSubview(button4)
 
 		let label: UILabel = UILabel()
-		label.frame = CGRect(x: 300, y: 100, width: 400, height: 70)
+		label.frame = CGRect(x: 400, y: 100, width: 700, height: 70)
 		label.backgroundColor = .clear
 		label.textColor = .white
-		label.textAlignment = NSTextAlignment.center
+		label.textAlignment = NSTextAlignment.left
 		label.text = TheQuestion
 		label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(label)
 
 		let label1: UILabel = UILabel()
-		label1.frame = CGRect(x: 350, y: 400, width: 300, height: 70)
+		label1.frame = CGRect(x: 400, y: 400, width: 300, height: 70)
 		label1.backgroundColor = .clear
-		label1.textAlignment = NSTextAlignment.center
+		label1.textAlignment = NSTextAlignment.left
 		label1.backgroundColor = .clear
 		label1.textColor = .white
-		label1.textAlignment = NSTextAlignment.center
 		label1.text = "Running Totals"
 		label1.font = UIFont(name:"ChalkboardSE-Bold", size: 40.0)
 		self.view.addSubview(label1)
 
-		Global_Variables.Global_Correct_Answer = REALAnswer
+		AppDelegate.Global_Variables.Global_Correct_Answer = REALAnswer
 		Add_Image()
 		Create_Total_Label()
 		Create_Correct_Label()
 		Create_Wrong_Label()
-		Save_Image()
-        //setActionImageviewNG()
+		//Save_Image()
+		//setActionImageviewNG()
 		return REALAnswer
 	}
-    
-    //@objc func imageViewAction(sender:UITapGestureRecognizer)
-    //{
-    //    print("Imageview Clicked")
-    //}
-    
+
+	//@objc func imageViewAction(sender:UITapGestureRecognizer)
+	//{
+	//	print("Imageview Clicked")
+	//}
+
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
@@ -471,7 +387,6 @@ class GradeOne_OneViewController: BaseViewController
 		self.view.backgroundColor = UIColor(patternImage: UIImage(named:"blackboard2-landscale.png")!)
 
 		Add_Image()
-		WriteTableHeader()
 		self.navigationController?.navigationBar.barTintColor = .systemPink
 		super.viewDidLoad()
 
@@ -499,7 +414,7 @@ class GradeOne_OneViewController: BaseViewController
 		let buttonTitle = sender.titleLabel?.text
 		print( buttonTitle!)
 		print("Button tapped")
-		let string = Global_Variables.Global_Correct_Answer
+		let string = AppDelegate.Global_Variables.Global_Correct_Answer
 
 		print("Global variable:\(string)")
 		for subview in self.view.subviews
@@ -510,24 +425,24 @@ class GradeOne_OneViewController: BaseViewController
 		{
 			print("Correct")
 			Correct()
-			let TheNewCorrect_Number : Int = Global_Variables.CORRECT_Count + 1
-			Global_Variables.CORRECT_Count = TheNewCorrect_Number
-			Global_Variables.Global_WrongAnswer = ""
+			let TheNewCorrect_Number : Int = AppDelegate.Global_Variables.CORRECT_Count + 1
+			AppDelegate.Global_Variables.CORRECT_Count = TheNewCorrect_Number
+			AppDelegate.Global_Variables.Global_WrongAnswer = ""
 		}
 		else
 		{
 			print("WRONG!")
 			Wrong()
-			Global_Variables.Global_WrongAnswer = buttonTitle!
-			let TheNewWrong_Number : Int = Global_Variables.WRONG_Count + 1
-			Global_Variables.WRONG_Count = TheNewWrong_Number
+			AppDelegate.Global_Variables.Global_WrongAnswer = buttonTitle!
+			let TheNewWrong_Number : Int = AppDelegate.Global_Variables.WRONG_Count + 1
+			AppDelegate.Global_Variables.WRONG_Count = TheNewWrong_Number
 		}
 
-		let TheNewTOTAL_Number : Int = Global_Variables.TOTAL_Count + 1
-		Global_Variables.TOTAL_Count = TheNewTOTAL_Number
+		let TheNewTOTAL_Number : Int = AppDelegate.Global_Variables.TOTAL_Count + 1
+		AppDelegate.Global_Variables.TOTAL_Count = TheNewTOTAL_Number
 
 		Append_To_File()
-        Percents()
+		Percents()
 		let TheNewAnswer = Create_New_Problem()
 		print(TheNewAnswer)
 	}
@@ -535,38 +450,75 @@ class GradeOne_OneViewController: BaseViewController
 	func PLACECorrectAnswer()
 	{
 		let correct: UILabel = UILabel()
-		correct.frame = CGRect(x: 300, y: 200, width: 400, height: 100)
+		correct.frame = CGRect(x: 400, y: 200, width: 400, height: 100)
 		correct.backgroundColor = .clear
 		correct.textColor = .green
-		correct.textAlignment = NSTextAlignment.center
-		correct.text = Global_Variables.Global_Correct_Answer
+		correct.textAlignment = NSTextAlignment.left
+		correct.text = AppDelegate.Global_Variables.Global_Correct_Answer
 		correct.font = UIFont(name:"ChalkboardSE-Bold", size: 70.0)
 		self.view.addSubview(correct)
 	}
-    
+
 	func Correct()
 	{
 		let correct: UILabel = UILabel()
-		correct.frame = CGRect(x: 300, y: 300, width: 400, height: 100)
+		correct.frame = CGRect(x: 400, y: 300, width: 400, height: 100)
 		correct.backgroundColor = .clear
 		correct.textColor = .green
-		correct.textAlignment = NSTextAlignment.center
+		correct.textAlignment = NSTextAlignment.left
 		correct.text = "Correct"
 		correct.font = UIFont(name:"ChalkboardSE-Bold", size: 70.0)
 		self.view.addSubview(correct)
 	}
-    
+
 	func Wrong()
 	{
 		let wrong: UILabel = UILabel()
-		wrong.frame = CGRect(x: 300, y: 300, width: 400, height: 100)
+		wrong.frame = CGRect(x: 400, y: 300, width: 400, height: 100)
 		wrong.backgroundColor = .clear
 		wrong.textColor = .red
-		wrong.textAlignment = NSTextAlignment.center
+		wrong.textAlignment = NSTextAlignment.left
 		wrong.text = "Wrong"
 		wrong.font = UIFont(name:"ChalkboardSE-Bold", size: 70.0)
 		self.view.addSubview(wrong)
 		PLACECorrectAnswer()
-   }
+	}
+	func Read_To_File()
+	{
+		let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
+
+		do
+		{
+			let text2 = try String(contentsOf: filename, encoding: .utf8)
+
+			print(text2)
+		}
+		catch
+		{
+			print("Failed to read from file")
+		}
+	}
+	func Append_To_File()
+	{
+		var TheString = ""
+		if ( AppDelegate.Global_Variables.Global_WrongAnswer == "" )
+		{
+			TheString = "<font color = 'green'>" + String(AppDelegate.Global_Variables.Global_Correct_Answer)
+		}
+		else
+		{
+			TheString = "<font color = 'red'>" + String(AppDelegate.Global_Variables.Global_WrongAnswer)
+		}
+
+		let str = "<tr><th>" + String(AppDelegate.Global_Variables.TheTitle) + "</th><th>" + String(AppDelegate.Global_Variables.TOTAL_Count) + "</th><th>" + String(AppDelegate.Global_Variables.Global_Question) + "</th><th>" + String(AppDelegate.Global_Variables.Global_Correct_Answer) + "</th><th>" +	TheString + "</font></th></tr>\n"
+		let data = Data(str.utf8)
+		let filename = getDocumentsDirectory().appendingPathComponent("Results.html")
+
+		if let fileHandle = FileHandle(forWritingAtPath: filename.path)
+		{
+			fileHandle.seekToEndOfFile()
+			fileHandle.write(data)
+		}
+	}
 }
 

@@ -1,6 +1,6 @@
 import UIKit
 
-class GradeFive_TwoViewController: BaseViewController
+class GradeFive_FourViewController: BaseViewController
 {
 	//@objc func imageViewAction(sender:UITapGestureRecognizer)
 	//{
@@ -11,18 +11,18 @@ class GradeFive_TwoViewController: BaseViewController
 	{
 		super.setup()
 
-		self.title = "Grade 5 Subtraction"
-        AppDelegate.Global_Variables.TheTitle = "Grade 5 Subtraction"
+		self.title = "Grade 5 Rounding"
+        AppDelegate.Global_Variables.TheTitle = "Grade 5 Rounding"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
 	{
-		let numberOne = Int.random(in: 150..<9000)
-		let numberTwo = Int.random(in: 150..<9000)
+		let numberOne = Int.random(in: 150..<3000)
+		let numberTwo = Int.random(in: 150..<3000)
 		let numberThree : Int = numberOne - 1
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2
-		let multi = " - "
+		let multi = " + "
 
 		var str1 = "";
 		str1.addString(str: String(numberOne))
@@ -103,6 +103,7 @@ class GradeFive_TwoViewController: BaseViewController
 		Percent_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(Percent_label)
 	}
+
 	func Save_Image()
 	{
 		let screenSize: CGRect = UIScreen.main.bounds
@@ -253,7 +254,7 @@ class GradeFive_TwoViewController: BaseViewController
 		ViewTitle.backgroundColor = .clear
 		ViewTitle.textColor = .white
 		ViewTitle.textAlignment = NSTextAlignment.center
-		ViewTitle.text = "Grade 5 Subtraction Problems"
+		ViewTitle.text = "Grade 5 Rounding Problems"
 		ViewTitle.font = UIFont(name:"ChalkboardSE-Bold", size: 40.0)
 		self.view.addSubview(ViewTitle)
 

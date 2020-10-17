@@ -1,41 +1,45 @@
 import UIKit
 
-class GradeFive_TwoViewController: BaseViewController
+class GradeFive_FiveViewController: BaseViewController
 {
-	//@objc func imageViewAction(sender:UITapGestureRecognizer)
-	//{
-	//	print("Imageview Clicked")
-	//}
-
 	override func setup()
 	{
 		super.setup()
 
-		self.title = "Grade 5 Subtraction"
-        AppDelegate.Global_Variables.TheTitle = "Grade 5 Subtraction"
+		self.title = "Grade 5 Order of Operations"
+        AppDelegate.Global_Variables.TheTitle = "Grade 5 Order of Operations"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
 	{
-		let numberOne = Int.random(in: 150..<9000)
-		let numberTwo = Int.random(in: 150..<9000)
-		let numberThree : Int = numberOne - 1
-		let numberFour : Int = numberOne + 1
-		let numberFive : Int = numberTwo + 2
-		let multi = " - "
+		let numberOne = Int.random(in: 1..<20)
+		let numberTwo = Int.random(in: 1..<20)
+		let numberThree = Int.random(in: 1..<20)
+		let numberFour = Int.random(in: 1..<20)
+		let numberFive = Int.random(in: 1..<20)
 
-		var str1 = "";
-		str1.addString(str: String(numberOne))
-		str1.addString(str: multi)
-		str1.addString(str: String(numberTwo))
-		str1.addString(str: " = ?")
+        let multi = " * "
+        let Minus = " - "
+        let ADDSymbol = " + "
+
+        var str1 = "";
+        str1.addString(str: String(numberOne))
+        str1.addString(str: Minus)
+        str1.addString(str: String(numberTwo))
+        str1.addString(str: ADDSymbol)
+        str1.addString(str: String(numberThree))
+        str1.addString(str: multi)
+        str1.addString(str: String(numberFour))
+        str1.addString(str: Minus)
+        str1.addString(str: String(numberFive))
+        str1.addString(str: " = ?")
 		let TheQuestion = str1
 		print(TheQuestion)
 
-		let TheAnwser : Int = numberOne - numberTwo
-		var TheBadOne : Int = numberThree - numberOne + 2
-		var TheBadTwo : Int = numberFour - numberOne + 3
-		var TheBadThree : Int = numberFive - numberOne + 4
+		let TheAnwser : Int = numberOne - numberTwo + ( numberThree * numberFour) - numberFive
+		var TheBadOne : Int = ( numberOne - numberTwo ) + numberThree * ( numberFour - numberFive )
+		var TheBadTwo : Int = ( ( numberOne - numberTwo ) + numberThree ) *  numberFour - numberFive
+		var TheBadThree : Int = ( ( numberOne - numberTwo ) + numberThree ) *  ( numberFour - numberFive )
 
 		if ( TheAnwser == TheBadOne )
 		{
@@ -103,6 +107,7 @@ class GradeFive_TwoViewController: BaseViewController
 		Percent_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(Percent_label)
 	}
+
 	func Save_Image()
 	{
 		let screenSize: CGRect = UIScreen.main.bounds
@@ -253,7 +258,7 @@ class GradeFive_TwoViewController: BaseViewController
 		ViewTitle.backgroundColor = .clear
 		ViewTitle.textColor = .white
 		ViewTitle.textAlignment = NSTextAlignment.center
-		ViewTitle.text = "Grade 5 Subtraction Problems"
+		ViewTitle.text = "Grade 5 Order of Operations Problems"
 		ViewTitle.font = UIFont(name:"ChalkboardSE-Bold", size: 40.0)
 		self.view.addSubview(ViewTitle)
 
@@ -302,12 +307,12 @@ class GradeFive_TwoViewController: BaseViewController
 		self.view.addSubview(button4)
 
 		let label: UILabel = UILabel()
-		label.frame = CGRect(x: 400, y: 100, width: 700, height: 70)
+		label.frame = CGRect(x: 400, y: 100, width: 800, height: 70)
 		label.backgroundColor = .clear
 		label.textColor = .white
 		label.textAlignment = NSTextAlignment.left
 		label.text = TheQuestion
-		label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
+		label.font = UIFont(name:"ChalkboardSE-Bold", size: 45.0)
 		self.view.addSubview(label)
 
 		let label1: UILabel = UILabel()
@@ -466,3 +471,4 @@ class GradeFive_TwoViewController: BaseViewController
 		}
 	}
 }
+

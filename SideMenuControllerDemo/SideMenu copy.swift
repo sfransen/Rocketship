@@ -12,7 +12,7 @@ class SideMenu: SMCSideMenu
 		self.viewControllerNames = [
 			[
 				"GradeOne_OneViewController",
-				"GradeOne_TwoViewController"
+				"GradeOne_TwoViewController",
 			],
 			[
 				"GradeTwo_OneViewController",
@@ -28,17 +28,20 @@ class SideMenu: SMCSideMenu
 				"GradeFour_OneViewController",
 				"GradeFour_TwoViewController",
 				"GradeFour_ThreeViewController",
-				"GradeFour_FiveViewController"
+				"GradeFour_FourViewController",
+				"GradeFive_FiveViewController"
 			],
 			[
+				"GradeFive_OneViewController",
 				"GradeFive_TwoViewViewController",
 				"GradeFive_ThreeViewViewController",
+				"GradeFive_FourViewViewController",
 				"GradeFive_FiveViewViewController"
 			],
-            [
-                "Settings_ViewController",
-                "Results_ViewController"
-            ],
+			[
+				"Settings_ViewController",
+				"Results_ViewController"
+			]
 		]
 		self.sectionTitles = [
 			"Grade 1",
@@ -46,12 +49,12 @@ class SideMenu: SMCSideMenu
 			"Grade 3",
 			"Grade 4",
 			"Grade 5",
-            "Settings"
+			"Settings"
 		]
 		self.menuTitles = [
 			[
 				"Grade 1 Additions",
-				"Grade 1 Subtraction"
+				"Grade 1 Subtraction",
 			],
 			[
 				"Grade 2 Additions",
@@ -67,22 +70,25 @@ class SideMenu: SMCSideMenu
 				"Grade 4 Additions",
 				"Grade 4 Subtraction",
 				"Grade 4 Multiplication",
+				"Grade 4 Rounding",
 				"Grade 4 Order Of Operations"
 			],
 			[
+				"Grade 5 Additions",
 				"Grade 5 Subtraction",
 				"Grade 5 Multiplication",
+				"Grade 5 Rounding",
 				"Grade 5 Order Of Operations"
 			],
-            [
-                "Settings",
-                "Results"
-            ],
+			[
+				"Settings",
+				"Results",
+			]
 		]
 		self.menuIcons = [
 			[
 				UIImage(named: "icon_timeline"),
-				UIImage(named: "icon_favorites")
+				UIImage(named: "icon_favorites"),
 			],
 			[
 				UIImage(named: "icon_timeline"),
@@ -98,17 +104,20 @@ class SideMenu: SMCSideMenu
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
 				UIImage(named: "icon_bookmarks"),
+				UIImage(named: "icon_bookmarks"),
 				UIImage(named: "icon_bookmarks")
 			],
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
+				UIImage(named: "icon_bookmarks"),
+				UIImage(named: "icon_bookmarks"),
 				UIImage(named: "icon_bookmarks")
 			],
-            [
-                UIImage(named: "icon_settings"),
-                UIImage(named: "icon_info")
-            ],
+			[
+				UIImage(named: "icon_settings"),
+				UIImage(named: "icon_info")
+			]
 		]
 	}
 

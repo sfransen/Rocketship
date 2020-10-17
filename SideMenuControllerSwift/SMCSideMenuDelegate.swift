@@ -38,17 +38,17 @@ public protocol SMCSideMenuDelegate: class
 extension SMCSideMenuDelegate
 {
 	public func startupIndexPath() -> IndexPath?
-    {
+	{
 		return nil
 	}
 
 	public func textColorOfHeader(in section: Int) -> UIColor?
-    {
+	{
 		return nil
 	}
 
 	public func backgroundColorOfHeader(in section: Int) -> UIColor?
-    {
+	{
 		return nil
 	}
 }
@@ -57,31 +57,31 @@ extension SMCSideMenuDelegate
 extension SMCSideMenuDelegate
 {
 	public func numberOfSections(in sideMenuController: SMCSideMenuController) -> Int
-    {
+	{
 		return 1
 	}
 
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, numberOfRowsInSection section: Int) -> Int
-    {
+	{
 		return 0
 	}
 
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, configure cell: UITableViewCell, forRowAt indexPath: IndexPath) -> UITableViewCell
-    {
+	{
 		return UITableViewCell()
 	}
 
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) -> Void
-    {
+	{
 	}
 
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, heightForHeaderInSection section: Int) -> CGFloat
-    {
+	{
 		return 0.0
 	}
 
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, didSelectRowAt indexPath: IndexPath) -> Void
-    {
+	{
 	}
 }
 
@@ -89,7 +89,7 @@ extension SMCSideMenuDelegate
 extension SMCSideMenuDelegate
 {
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, titleForHeaderInSection section: Int) -> String?
-    {
+	{
 		return nil
 	}
 }
@@ -98,10 +98,10 @@ extension SMCSideMenuDelegate
 extension SMCSideMenuDelegate
 {
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, didShowMenu viewController: UIViewController)
-    {
+	{
 	}
 
 	public func sideMenu(_ sideMenuController: SMCSideMenuController, didHideMenu viewController: UIViewController)
-    {
+	{
 	}
 }

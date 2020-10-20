@@ -337,7 +337,7 @@ class GradeThree_OneViewController: BaseViewController
 		self.view.backgroundColor = UIColor(patternImage: UIImage(named:"blackboard2-landscale.png")!)
 
 		Add_Image()
-		self.navigationController?.navigationBar.barTintColor = .systemPink
+		self.navigationController?.navigationBar.barTintColor = .systemIndigo
 		super.viewDidLoad()
 
 		let MyAnswer = Create_New_Problem()

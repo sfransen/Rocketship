@@ -61,7 +61,8 @@ class GradeOne_OneViewController: BaseViewController
 	{
 		let numberOne = Int.random(in: 1..<10)
 		let numberTwo = Int.random(in: 1..<10)
-		let numberThree : Int = numberOne - 1
+
+        let numberThree : Int = numberOne - 1
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2
 		let multi = " + "

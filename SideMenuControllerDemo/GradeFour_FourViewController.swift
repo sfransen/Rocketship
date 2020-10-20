@@ -363,7 +363,7 @@ class GradeFour_FourViewController: BaseViewController
 
 		Add_Image()
 		//WriteTableHeader()
-		self.navigationController?.navigationBar.barTintColor = .systemPink
+		self.navigationController?.navigationBar.barTintColor = .systemPurple
 		super.viewDidLoad()
 
 		let MyAnswer = Create_New_Problem()

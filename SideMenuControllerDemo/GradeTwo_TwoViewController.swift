@@ -17,9 +17,29 @@ class GradeTwo_TwoViewController: BaseViewController
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
 	{
-		let numberOne = Int.random(in: 1..<25)
-		let numberTwo = Int.random(in: 1..<25)
-		let numberThree : Int = numberOne - 1
+        let numberOneTmp = Int.random(in: 1..<20)
+        let numberTwoTemp = Int.random(in: 1..<20)
+        var numberOne = 0
+        var numberTwo = 0
+        if ( numberOneTmp > numberTwoTemp )
+        {
+            numberOne = numberOneTmp
+            numberTwo = numberTwoTemp
+        }
+        else
+        {
+            numberOne = numberTwoTemp
+            numberTwo = numberOneTmp
+        }
+        var numberThree = 0
+        if ( numberOne != 0 )
+        {
+            numberThree = numberOne - 1
+        }
+        else
+        {
+            numberThree = numberOne + 3
+        }
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2
 		let multi = " - "
@@ -32,10 +52,10 @@ class GradeTwo_TwoViewController: BaseViewController
 		let TheQuestion = str1
 		print(TheQuestion)
 
-		let TheAnwser : Int = numberOne - numberTwo
-		var TheBadOne : Int = numberThree - numberOne + 2
-		var TheBadTwo : Int = numberFour - numberOne + 3
-		var TheBadThree : Int = numberFive - numberOne + 4
+		let TheAnwser : Int = numberOne - numberFive
+		var TheBadOne : Int = numberOne + 1 - numberTwo
+		var TheBadTwo : Int = numberOne - numberThree + 3
+		var TheBadThree : Int = numberOne - numberFour + 4
 
 		if ( TheAnwser == TheBadOne )
 		{
@@ -336,7 +356,7 @@ class GradeTwo_TwoViewController: BaseViewController
 		self.view.backgroundColor = UIColor(patternImage: UIImage(named:"blackboard2-landscale.png")!)
 
 		Add_Image()
-		self.navigationController?.navigationBar.barTintColor = .systemPink
+		self.navigationController?.navigationBar.barTintColor = .systemRed
 		super.viewDidLoad()
 
 		let MyAnswer = Create_New_Problem()

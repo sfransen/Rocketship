@@ -1,0 +1,653 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SideMenu"
+provides-nominal:
+- "22SideMenuControllerDemo0aB0C"
+provides-member:
+- ["22SideMenuControllerDemo0aB0C", ""]
+- ["So14NSUserDefaultsC", ""]
+- ["So14NSUserDefaultsC", "indexPath"]
+- ["So14NSUserDefaultsC", "set"]
+provides-dynamic-lookup:
+- "backgroundColorOfHeader"
+- "indexPath"
+- "set"
+- "sideMenu"
+- "startupIndexPath"
+- "textColorOfHeader"
+depends-top-level:
+- !private "Array"
+- "AssignmentPrecedence"
+- "IndexPath"
+- "Int"
+- !private "JSONDecoder"
+- !private "JSONEncoder"
+- "SMCSideMenu"
+- "SMCSideMenuController"
+- "SideMenu"
+- "String"
+- !private "StringLiteralType"
+- "UIColor"
+- !private "UIImage"
+- "UITableViewCell"
+- "UITraitCollection"
+- "UserDefaults"
+- "Void"
+- !private "data"
+- !private "set"
+depends-member:
+- ["SK", ""]
+- !private ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "imageView"]
+- !private ["So15CALayerDelegateP", "tintColor"]
+- !private ["s7CVarArgP", "IndexPath"]
+- !private ["s7CVarArgP", "JSONDecoder"]
+- !private ["s7CVarArgP", "JSONEncoder"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UserDefaults"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "clear"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "imageView"]
+- !private ["s7CVarArgP", "indexPath"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "label"]
+- !private ["s7CVarArgP", "menuIcons"]
+- !private ["s7CVarArgP", "menuTitles"]
+- !private ["s7CVarArgP", "sectionTitles"]
+- !private ["s7CVarArgP", "set"]
+- !private ["s7CVarArgP", "sideMenu"]
+- !private ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "systemBlue"]
+- !private ["s7CVarArgP", "systemGreen"]
+- !private ["s7CVarArgP", "systemRed"]
+- !private ["s7CVarArgP", "tintColor"]
+- !private ["s7CVarArgP", "userInterfaceStyle"]
+- !private ["s7CVarArgP", "viewControllerNames"]
+- ["Sl", ""]
+- ["SL", ""]
+- !private ["s28CustomDebugStringConvertibleP", "IndexPath"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
+- !private ["s28CustomDebugStringConvertibleP", "JSONEncoder"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "clear"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "imageView"]
+- !private ["s28CustomDebugStringConvertibleP", "indexPath"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "label"]
+- !private ["s28CustomDebugStringConvertibleP", "menuIcons"]
+- !private ["s28CustomDebugStringConvertibleP", "menuTitles"]
+- !private ["s28CustomDebugStringConvertibleP", "sectionTitles"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "sideMenu"]
+- !private ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "systemBlue"]
+- !private ["s28CustomDebugStringConvertibleP", "systemGreen"]
+- !private ["s28CustomDebugStringConvertibleP", "systemRed"]
+- !private ["s28CustomDebugStringConvertibleP", "tintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "userInterfaceStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "viewControllerNames"]
+- !private ["s17CustomReflectableP", "clear"]
+- !private ["s23CustomStringConvertibleP", "IndexPath"]
+- !private ["s23CustomStringConvertibleP", "JSONDecoder"]
+- !private ["s23CustomStringConvertibleP", "JSONEncoder"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "clear"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "imageView"]
+- !private ["s23CustomStringConvertibleP", "indexPath"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "label"]
+- !private ["s23CustomStringConvertibleP", "menuIcons"]
+- !private ["s23CustomStringConvertibleP", "menuTitles"]
+- !private ["s23CustomStringConvertibleP", "sectionTitles"]
+- !private ["s23CustomStringConvertibleP", "set"]
+- !private ["s23CustomStringConvertibleP", "sideMenu"]
+- !private ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "systemBlue"]
+- !private ["s23CustomStringConvertibleP", "systemGreen"]
+- !private ["s23CustomStringConvertibleP", "systemRed"]
+- !private ["s23CustomStringConvertibleP", "tintColor"]
+- !private ["s23CustomStringConvertibleP", "userInterfaceStyle"]
+- !private ["s23CustomStringConvertibleP", "viewControllerNames"]
+- !private ["Se", "clear"]
+- !private ["SE", "clear"]
+- !private ["SQ", "IndexPath"]
+- !private ["SQ", "JSONDecoder"]
+- !private ["SQ", "JSONEncoder"]
+- !private ["SQ", "UIColor"]
+- !private ["SQ", "UIImage"]
+- !private ["SQ", "UserDefaults"]
+- ["SQ", ""]
+- !private ["SQ", "clear"]
+- !private ["SQ", "dark"]
+- !private ["SQ", "data"]
+- !private ["SQ", "imageView"]
+- !private ["SQ", "indexPath"]
+- !private ["SQ", "init"]
+- !private ["SQ", "label"]
+- !private ["SQ", "light"]
+- !private ["SQ", "menuIcons"]
+- !private ["SQ", "menuTitles"]
+- !private ["SQ", "sectionTitles"]
+- !private ["SQ", "set"]
+- !private ["SQ", "sideMenu"]
+- !private ["SQ", "standard"]
+- !private ["SQ", "systemBlue"]
+- !private ["SQ", "systemGreen"]
+- !private ["SQ", "systemRed"]
+- !private ["SQ", "tintColor"]
+- !private ["SQ", "unspecified"]
+- !private ["SQ", "userInterfaceStyle"]
+- !private ["SQ", "viewControllerNames"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s23ExpressibleByNilLiteralP", "clear"]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["SH", "IndexPath"]
+- !private ["SH", "JSONDecoder"]
+- !private ["SH", "JSONEncoder"]
+- !private ["SH", "UIColor"]
+- !private ["SH", "UIImage"]
+- !private ["SH", "UserDefaults"]
+- ["SH", ""]
+- !private ["SH", "clear"]
+- !private ["SH", "dark"]
+- !private ["SH", "data"]
+- !private ["SH", "imageView"]
+- !private ["SH", "indexPath"]
+- !private ["SH", "init"]
+- !private ["SH", "label"]
+- !private ["SH", "light"]
+- !private ["SH", "menuIcons"]
+- !private ["SH", "menuTitles"]
+- !private ["SH", "sectionTitles"]
+- !private ["SH", "set"]
+- !private ["SH", "sideMenu"]
+- !private ["SH", "standard"]
+- !private ["SH", "systemBlue"]
+- !private ["SH", "systemGreen"]
+- !private ["SH", "systemRed"]
+- !private ["SH", "tintColor"]
+- !private ["SH", "unspecified"]
+- !private ["SH", "userInterfaceStyle"]
+- !private ["SH", "viewControllerNames"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["10Foundation11JSONEncoderC", "encode"]
+- !private ["10Foundation11JSONEncoderC", "init"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "clear"]
+- !private ["So8NSCodingP", "imageView"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "label"]
+- !private ["So8NSCodingP", "systemBlue"]
+- !private ["So8NSCodingP", "systemGreen"]
+- !private ["So8NSCodingP", "systemRed"]
+- !private ["So8NSCodingP", "tintColor"]
+- !private ["So8NSCodingP", "userInterfaceStyle"]
+- !private ["So9NSCopyingP", "clear"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "label"]
+- !private ["So9NSCopyingP", "systemBlue"]
+- !private ["So9NSCopyingP", "systemGreen"]
+- !private ["So9NSCopyingP", "systemRed"]
+- !private ["So9NSCopyingP", "userInterfaceStyle"]
+- !private ["So21NSItemProviderReadingP", "clear"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "label"]
+- !private ["So21NSItemProviderReadingP", "systemBlue"]
+- !private ["So21NSItemProviderReadingP", "systemGreen"]
+- !private ["So21NSItemProviderReadingP", "systemRed"]
+- !private ["So21NSItemProviderWritingP", "clear"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "label"]
+- !private ["So21NSItemProviderWritingP", "systemBlue"]
+- !private ["So21NSItemProviderWritingP", "systemGreen"]
+- !private ["So21NSItemProviderWritingP", "systemRed"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "JSONDecoder"]
+- !private ["So8NSObjectC", "JSONEncoder"]
+- ["So8NSObjectC", "SMCSideMenuController"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UITableViewCell"]
+- !private ["So8NSObjectC", "UITraitCollection"]
+- !private ["So8NSObjectC", "UserDefaults"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "backgroundColorOfHeader"]
+- !private ["So8NSObjectC", "clear"]
+- !private ["So8NSObjectC", "colorNamed"]
+- !private ["So8NSObjectC", "colorWithCGColor"]
+- !private ["So8NSObjectC", "colorWithCIColor"]
+- !private ["So8NSObjectC", "colorWithDisplayP3Red"]
+- !private ["So8NSObjectC", "colorWithDynamicProvider"]
+- !private ["So8NSObjectC", "colorWithHue"]
+- !private ["So8NSObjectC", "colorWithPatternImage"]
+- !private ["So8NSObjectC", "colorWithRed"]
+- !private ["So8NSObjectC", "colorWithWhite"]
+- !private ["So8NSObjectC", "data"]
+- !private ["So8NSObjectC", "dataForKey"]
+- !private ["So8NSObjectC", "imageNamed"]
+- !private ["So8NSObjectC", "imageView"]
+- !private ["So8NSObjectC", "imageWithCGImage"]
+- !private ["So8NSObjectC", "imageWithCIImage"]
+- !private ["So8NSObjectC", "imageWithContentsOfFile"]
+- !private ["So8NSObjectC", "imageWithData"]
+- ["So8NSObjectC", "indexPath"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "jpegData"]
+- !private ["So8NSObjectC", "label"]
+- !private ["So8NSObjectC", "menuIcons"]
+- !private ["So8NSObjectC", "menuTitles"]
+- !private ["So8NSObjectC", "pngData"]
+- !private ["So8NSObjectC", "sectionTitles"]
+- ["So8NSObjectC", "set"]
+- ["So8NSObjectC", "setBool"]
+- ["So8NSObjectC", "setDouble"]
+- ["So8NSObjectC", "setFloat"]
+- ["So8NSObjectC", "setInteger"]
+- ["So8NSObjectC", "setObject"]
+- ["So8NSObjectC", "setURL"]
+- ["So8NSObjectC", "sideMenu"]
+- !private ["So8NSObjectC", "standard"]
+- ["So8NSObjectC", "startupIndexPath"]
+- !private ["So8NSObjectC", "systemBlue"]
+- !private ["So8NSObjectC", "systemGreen"]
+- !private ["So8NSObjectC", "systemImageNamed"]
+- !private ["So8NSObjectC", "systemRed"]
+- ["So8NSObjectC", "textColorOfHeader"]
+- !private ["So8NSObjectC", "tintColor"]
+- !private ["So8NSObjectC", "userInterfaceStyle"]
+- !private ["So8NSObjectC", "viewControllerNames"]
+- ["So8NSObjectP", "IndexPath"]
+- ["So8NSObjectP", "Int"]
+- !private ["So8NSObjectP", "JSONDecoder"]
+- !private ["So8NSObjectP", "JSONEncoder"]
+- ["So8NSObjectP", "SMCSideMenuController"]
+- ["So8NSObjectP", "String"]
+- ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UIImage"]
+- ["So8NSObjectP", "UITableViewCell"]
+- !private ["So8NSObjectP", "UITraitCollection"]
+- !private ["So8NSObjectP", "UserDefaults"]
+- ["So8NSObjectP", "Void"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "backgroundColorOfHeader"]
+- !private ["So8NSObjectP", "clear"]
+- !private ["So8NSObjectP", "colorNamed"]
+- !private ["So8NSObjectP", "colorWithCGColor"]
+- !private ["So8NSObjectP", "colorWithCIColor"]
+- !private ["So8NSObjectP", "colorWithDisplayP3Red"]
+- !private ["So8NSObjectP", "colorWithDynamicProvider"]
+- !private ["So8NSObjectP", "colorWithHue"]
+- !private ["So8NSObjectP", "colorWithPatternImage"]
+- !private ["So8NSObjectP", "colorWithRed"]
+- !private ["So8NSObjectP", "colorWithWhite"]
+- !private ["So8NSObjectP", "data"]
+- !private ["So8NSObjectP", "dataForKey"]
+- !private ["So8NSObjectP", "imageNamed"]
+- !private ["So8NSObjectP", "imageView"]
+- !private ["So8NSObjectP", "imageWithCGImage"]
+- !private ["So8NSObjectP", "imageWithCIImage"]
+- !private ["So8NSObjectP", "imageWithContentsOfFile"]
+- !private ["So8NSObjectP", "imageWithData"]
+- ["So8NSObjectP", "indexPath"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "jpegData"]
+- !private ["So8NSObjectP", "label"]
+- !private ["So8NSObjectP", "menuIcons"]
+- !private ["So8NSObjectP", "menuTitles"]
+- !private ["So8NSObjectP", "pngData"]
+- !private ["So8NSObjectP", "sectionTitles"]
+- ["So8NSObjectP", "set"]
+- ["So8NSObjectP", "setBool"]
+- ["So8NSObjectP", "setDouble"]
+- ["So8NSObjectP", "setFloat"]
+- ["So8NSObjectP", "setInteger"]
+- ["So8NSObjectP", "setObject"]
+- ["So8NSObjectP", "setURL"]
+- ["So8NSObjectP", "sideMenu"]
+- !private ["So8NSObjectP", "standard"]
+- ["So8NSObjectP", "startupIndexPath"]
+- !private ["So8NSObjectP", "systemBlue"]
+- !private ["So8NSObjectP", "systemGreen"]
+- !private ["So8NSObjectP", "systemImageNamed"]
+- !private ["So8NSObjectP", "systemRed"]
+- ["So8NSObjectP", "textColorOfHeader"]
+- !private ["So8NSObjectP", "tintColor"]
+- !private ["So8NSObjectP", "userInterfaceStyle"]
+- !private ["So8NSObjectP", "viewControllerNames"]
+- !private ["So14NSSecureCodingP", "clear"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "label"]
+- !private ["So14NSSecureCodingP", "systemBlue"]
+- !private ["So14NSSecureCodingP", "systemGreen"]
+- !private ["So14NSSecureCodingP", "systemRed"]
+- !private ["So14NSSecureCodingP", "userInterfaceStyle"]
+- !private ["So18NSTouchBarProviderP", ""]
+- !private ["So18NSTouchBarProviderP", "imageView"]
+- !private ["So18NSTouchBarProviderP", "tintColor"]
+- !private ["Sq", "clear"]
+- !private ["SY", "dark"]
+- !private ["SY", "light"]
+- !private ["SY", "unspecified"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "IndexPath"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "Int"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "SMCSideMenuController"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "UIColor"]
+- !private ["25RocketshipControllerSwift11SMCSideMenuC", "UIImage"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "UITableViewCell"]
+- !private ["25RocketshipControllerSwift11SMCSideMenuC", "UITraitCollection"]
+- !private ["25RocketshipControllerSwift11SMCSideMenuC", "UserDefaults"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "Void"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", ""]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "backgroundColorOfHeader"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "init"]
+- !private ["25RocketshipControllerSwift11SMCSideMenuC", "menuIcons"]
+- !private ["25RocketshipControllerSwift11SMCSideMenuC", "menuTitles"]
+- !private ["25RocketshipControllerSwift11SMCSideMenuC", "sectionTitles"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "sideMenu"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "startupIndexPath"]
+- ["25RocketshipControllerSwift11SMCSideMenuC", "textColorOfHeader"]
+- !private ["25RocketshipControllerSwift11SMCSideMenuC", "viewControllerNames"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "UIColor"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "UIImage"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "UserDefaults"]
+- ["25RocketshipControllerSwift19SMCSideMenuDelegateP", ""]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "init"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "menuIcons"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "menuTitles"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "sectionTitles"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "sideMenu"]
+- !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "viewControllerNames"]
+- ["ST", ""]
+- ["22SideMenuControllerDemo0aB0C", "IndexPath"]
+- ["22SideMenuControllerDemo0aB0C", "Int"]
+- ["22SideMenuControllerDemo0aB0C", "SMCSideMenuController"]
+- ["22SideMenuControllerDemo0aB0C", "UIColor"]
+- !private ["22SideMenuControllerDemo0aB0C", "UIImage"]
+- ["22SideMenuControllerDemo0aB0C", "UITableViewCell"]
+- !private ["22SideMenuControllerDemo0aB0C", "UITraitCollection"]
+- !private ["22SideMenuControllerDemo0aB0C", "UserDefaults"]
+- ["22SideMenuControllerDemo0aB0C", "Void"]
+- ["22SideMenuControllerDemo0aB0C", ""]
+- ["22SideMenuControllerDemo0aB0C", "backgroundColorOfHeader"]
+- ["22SideMenuControllerDemo0aB0C", "deinit"]
+- ["22SideMenuControllerDemo0aB0C", "init"]
+- !private ["22SideMenuControllerDemo0aB0C", "menuIcons"]
+- !private ["22SideMenuControllerDemo0aB0C", "menuTitles"]
+- !private ["22SideMenuControllerDemo0aB0C", "sectionTitles"]
+- ["22SideMenuControllerDemo0aB0C", "sideMenu"]
+- ["22SideMenuControllerDemo0aB0C", "startupIndexPath"]
+- ["22SideMenuControllerDemo0aB0C", "textColorOfHeader"]
+- !private ["22SideMenuControllerDemo0aB0C", "viewControllerNames"]
+- ["s16TextOutputStreamP", ""]
+- ["s20TextOutputStreamableP", ""]
+- !private ["7Combine15TopLevelDecoderP", "decode"]
+- !private ["7Combine15TopLevelDecoderP", "init"]
+- !private ["7Combine15TopLevelEncoderP", "encode"]
+- !private ["7Combine15TopLevelEncoderP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "tintColor"]
+- !private ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "imageView"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "tintColor"]
+- !private ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "imageView"]
+- !private ["So12UIAppearanceP", "tintColor"]
+- !private ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "imageView"]
+- !private ["So21UIAppearanceContainerP", "tintColor"]
+- !private ["So7UIColorC", "clear"]
+- !private ["So7UIColorC", "init"]
+- !private ["So7UIColorC", "label"]
+- !private ["So7UIColorC", "systemBlue"]
+- !private ["So7UIColorC", "systemGreen"]
+- !private ["So7UIColorC", "systemRed"]
+- !private ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "imageView"]
+- !private ["So17UICoordinateSpaceP", "tintColor"]
+- !private ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "imageView"]
+- !private ["So13UIDynamicItemP", "tintColor"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "imageView"]
+- !private ["So18UIFocusEnvironmentP", "tintColor"]
+- !private ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "imageView"]
+- !private ["So11UIFocusItemP", "tintColor"]
+- !private ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "imageView"]
+- !private ["So20UIFocusItemContainerP", "tintColor"]
+- !private ["So27UIGestureRecognizerDelegateP", "imageView"]
+- !private ["So7UIImageC", "init"]
+- !private ["So11UIImageViewC", "tintColor"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So24UILargeContentViewerItemP", ""]
+- !private ["So24UILargeContentViewerItemP", "imageView"]
+- !private ["So24UILargeContentViewerItemP", "tintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "imageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
+- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", "imageView"]
+- !private ["So11UIResponderC", "tintColor"]
+- !private ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "imageView"]
+- !private ["So30UIResponderStandardEditActionsP", "tintColor"]
+- !private ["So15UITableViewCellC", "imageView"]
+- !private ["So17UITraitCollectionC", "userInterfaceStyle"]
+- !private ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "imageView"]
+- !private ["So18UITraitEnvironmentP", "tintColor"]
+- !private ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "imageView"]
+- !private ["So23UIUserActivityRestoringP", "tintColor"]
+- !private ["So20UIUserInterfaceStyleV", "dark"]
+- !private ["So20UIUserInterfaceStyleV", "light"]
+- !private ["So20UIUserInterfaceStyleV", "unspecified"]
+- ["So6UIViewC", ""]
+- !private ["So6UIViewC", "imageView"]
+- !private ["So6UIViewC", "tintColor"]
+- ["So14NSUserDefaultsC", "IndexPath"]
+- !private ["So14NSUserDefaultsC", "JSONDecoder"]
+- !private ["So14NSUserDefaultsC", "JSONEncoder"]
+- ["So14NSUserDefaultsC", "String"]
+- ["So14NSUserDefaultsC", ""]
+- !private ["So14NSUserDefaultsC", "data"]
+- ["So14NSUserDefaultsC", "indexPath"]
+- ["So14NSUserDefaultsC", "set"]
+- !private ["So14NSUserDefaultsC", "standard"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s26_ExpressibleByColorLiteralP", "clear"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "label"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemBlue"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemGreen"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemRed"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONDecoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONEncoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "label"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuIcons"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuTitles"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sectionTitles"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sideMenu"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemBlue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemGreen"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemRed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userInterfaceStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllerNames"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "IndexPath"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONDecoder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONEncoder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "clear"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "data"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imageView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPath"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "label"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "menuIcons"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "menuTitles"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sectionTitles"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sideMenu"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemBlue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemGreen"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemRed"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userInterfaceStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewControllerNames"]
+- !private ["s21_ObjectiveCBridgeableP", "clear"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "imageView"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "tintColor"]
+depends-nominal:
+- "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "10Foundation11JSONDecoderC"
+- !private "10Foundation11JSONEncoderC"
+- "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So18NSTouchBarProviderP"
+- !private "Sq"
+- !private "SY"
+- "25RocketshipControllerSwift11SMCSideMenuC"
+- "25RocketshipControllerSwift19SMCSideMenuDelegateP"
+- "ST"
+- "22SideMenuControllerDemo0aB0C"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "7Combine15TopLevelDecoderP"
+- !private "7Combine15TopLevelEncoderP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So27UIGestureRecognizerDelegateP"
+- !private "So7UIImageC"
+- !private "So11UIImageViewC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So15UITableViewCellC"
+- !private "So17UITraitCollectionC"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So20UIUserInterfaceStyleV"
+- "So6UIViewC"
+- "So14NSUserDefaultsC"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Users/sfransen/Desktop/Github/Rocketship/build/Debug-maccatalyst/RocketshipControllerSwift.framework/Modules/RocketshipControllerSwift.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-macabi.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/iOSSupport/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/iOSSupport/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "a1a93e626eab59146753d9d3141e422b"

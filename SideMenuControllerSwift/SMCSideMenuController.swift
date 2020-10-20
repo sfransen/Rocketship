@@ -338,6 +338,7 @@ extension SMCSideMenuController
 
 	func setRootViewController(_ viewController: UIViewController)
 	{
+        print("START setRootViewController")
 		self.addChild(viewController)
 		viewController.didMove(toParent: self)
 
@@ -370,10 +371,12 @@ extension SMCSideMenuController
 										completion: completionHandler)
 
 		self.performExtension(with: viewController)
+        print("END setRootViewController")
 	}
 
 	private func performExtension(with viewController: UIViewController)
 	{
+        print("START performExtension")
 		// Call the original selector if exists
 		if viewController.isKind(of: UINavigationController.self)
 		{
@@ -386,6 +389,7 @@ extension SMCSideMenuController
 		{
 			viewController.sideMenu(didSelect: viewController)
 		}
+        print("END performExtension")
 	}
 }
 
@@ -394,16 +398,19 @@ extension SMCSideMenuController: UITableViewDataSource
 {
 	public func numberOfSections(in tableView: UITableView) -> Int
 	{
+        print("START numberOfSections")
 		return delegate.numberOfSections(in: self)
 	}
 
 	public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 	{
+        print("START tableView numberOfRowsInSection")
 		return delegate.sideMenu(self, numberOfRowsInSection:section)
 	}
 
 	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
 	{
+        print("START tableView cellForRowAt")
 		let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: kSideMenuTableViewCellIdentifier, for: indexPath)
 		cell.selectionStyle = .default
 		cell.accessoryType = .none
@@ -411,12 +418,15 @@ extension SMCSideMenuController: UITableViewDataSource
 		cell.imageView?.image = nil
 		cell.textLabel?.text = nil
 		cell.textLabel?.adjustsFontSizeToFitWidth = true
+        print("END tableView cellForRowAt")
 		return delegate.sideMenu(self, configure: cell, forRowAt: indexPath)
 	}
 
 	public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
 	{
+        print("START tableView")
 		let height = delegate.sideMenu(self, heightForHeaderInSection: section)
+        print("END tableView")
 		return height < 0.0 ? kSectionHeaderLabelHeight : height
 	}
 }
@@ -426,12 +436,15 @@ extension SMCSideMenuController: UITableViewDelegate
 {
 	public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
 	{
+        print("START tableView willDisplay")
 		cell.separatorInset = .zero
 		delegate.sideMenu(self, willDisplay: cell, forRowAt: indexPath)
+        print("END tableView willDisplay")
 	}
 
 	public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
 	{
+        print("START tableView willDisplayHeaderView")
 		if let headerView = view as? SideMenuHeader
 		{
 			if let color = delegate.textColorOfHeader(in: section)
@@ -443,20 +456,24 @@ extension SMCSideMenuController: UITableViewDelegate
 				headerView.contentView.backgroundColor = color
 			}
 		}
+        print("END tableView willDisplayHeaderView")
 	}
 
 	public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
 	{
+        print("START tableView viewForHeaderInSection")
 		if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: kSideMenuHeaderIdentifier) as? SideMenuHeader
 		{
 			headerView.titleLabel.text = delegate.sideMenu(self, titleForHeaderInSection: section)
 			return headerView
 		}
+        print("END tableView viewForHeaderInSection")
 		return nil
 	}
 
 	public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 	{
+        print("START tableView didSelectRowAt")
 		delegate.sideMenu(self, didSelectRowAt: indexPath)
 		DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async
 		{
@@ -482,6 +499,7 @@ extension SMCSideMenuController: UITableViewDelegate
 				}
 			}
 		}
+        print("END tableView didSelectRowAt")
 	}
 }
 
@@ -489,6 +507,7 @@ extension SMCSideMenuController
 {
 	public func menuIcon(color: UIColor = .white) -> UIImage?
 	{
+        print("START menuIcon")
 		let	size: CGSize	= CGSize(width: 32.0, height: 32.0)
 		let opaque: Bool		= false
 		let	scale: CGFloat = 0.0
@@ -511,12 +530,14 @@ extension SMCSideMenuController
 
 		let image = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
+        print("END menuIcon")
 		return image?.withRenderingMode(.alwaysOriginal)
 	}
 
 	public func menuButtonItem(iconColor: UIColor = .white) -> UIBarButtonItem
 	{
-		let image: UIImage? = menuIcon(color: iconColor)
+		print("START menuButtonItem")
+        let image: UIImage? = menuIcon(color: iconColor)
 		let button: UIButton = UIButton(type: .custom)
 		button.setImage(image, for: .normal)
 		let color: UIColor = UIColor(white: 1.0, alpha: 0.5)
@@ -524,6 +545,7 @@ extension SMCSideMenuController
 		button.setImage(menuIcon(color: color), for: .highlighted)
 		button.sizeToFit()
 		button.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
+        print("END menuButtonItem")
 		return UIBarButtonItem(customView: button)
 	}
 }

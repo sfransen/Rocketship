@@ -17,8 +17,20 @@ class GradeOne_TwoViewController: BaseViewController
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
 	{
-		let numberOne = Int.random(in: 1..<10)
-		let numberTwo = Int.random(in: 1..<10)
+        let numberOneTmp = Int.random(in: 1..<10)
+        let numberTwoTemp = Int.random(in: 1..<10)
+        var numberOne = 0
+        var numberTwo = 0
+        if ( numberOneTmp > numberTwoTemp )
+        {
+            numberOne = numberOneTmp
+            numberTwo = numberTwoTemp
+        }
+        else
+        {
+            numberOne = numberTwoTemp
+            numberTwo = numberOneTmp
+        }
 		let numberThree : Int = numberOne - 1
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2

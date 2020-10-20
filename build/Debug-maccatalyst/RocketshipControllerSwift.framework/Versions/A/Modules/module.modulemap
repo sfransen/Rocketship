@@ -1,0 +1,4 @@
+framework module RocketshipControllerSwift {
+  header "RocketshipControllerSwift-Swift.h"
+  requires objc
+}

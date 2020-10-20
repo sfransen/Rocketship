@@ -1,7 +1,7 @@
 
 import Foundation
 import UIKit
-import SideMenuControllerSwift
+import RocketshipControllerSwift
 
 class SideMenu: SMCSideMenu
 {
@@ -31,9 +31,10 @@ class SideMenu: SMCSideMenu
 				"GradeFour_FiveViewController"
 			],
 			[
-				"GradeFive_TwoViewViewController",
-				"GradeFive_ThreeViewViewController",
-				"GradeFive_FiveViewViewController"
+				"GradeFive_OneViewController",
+				"GradeFive_TwoViewController",
+				"GradeFive_ThreeViewController",
+				"GradeFive_FiveViewController"
 			],
             [
                 "Settings_ViewController",
@@ -70,6 +71,7 @@ class SideMenu: SMCSideMenu
 				"Grade 4 Order Of Operations"
 			],
 			[
+				"Grade 4 Additions",
 				"Grade 5 Subtraction",
 				"Grade 5 Multiplication",
 				"Grade 5 Order Of Operations"
@@ -83,7 +85,7 @@ class SideMenu: SMCSideMenu
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites")
-			],
+            ],
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
@@ -103,6 +105,7 @@ class SideMenu: SMCSideMenu
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
+				UIImage(named: "icon_bookmarks"),
 				UIImage(named: "icon_bookmarks")
 			],
             [

@@ -1,6 +1,6 @@
 
 import UIKit
-import SideMenuControllerSwift
+import RocketshipControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate

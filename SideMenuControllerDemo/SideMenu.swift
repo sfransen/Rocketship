@@ -28,12 +28,14 @@ class SideMenu: SMCSideMenu
 				"GradeFour_OneViewController",
 				"GradeFour_TwoViewController",
 				"GradeFour_ThreeViewController",
+                "GradeFour_FourViewController",
 				"GradeFour_FiveViewController"
 			],
 			[
 				"GradeFive_OneViewController",
 				"GradeFive_TwoViewController",
 				"GradeFive_ThreeViewController",
+                "GradeFive_FourViewController",
 				"GradeFive_FiveViewController"
 			],
             [
@@ -68,13 +70,15 @@ class SideMenu: SMCSideMenu
 				"Grade 4 Additions",
 				"Grade 4 Subtraction",
 				"Grade 4 Multiplication",
-				"Grade 4 Order Of Operations"
+				"Grade 4 Order Of Operations",
+                "Grade 4 Rounding"
 			],
 			[
-				"Grade 4 Additions",
+				"Grade 5 Additions",
 				"Grade 5 Subtraction",
 				"Grade 5 Multiplication",
-				"Grade 5 Order Of Operations"
+				"Grade 5 Order Of Operations",
+                "Grade 5 Rounding",
 			],
             [
                 "Settings",
@@ -99,12 +103,14 @@ class SideMenu: SMCSideMenu
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
+                UIImage(named: "icon_favorites"),
 				UIImage(named: "icon_bookmarks"),
 				UIImage(named: "icon_bookmarks")
 			],
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
+                UIImage(named: "icon_favorites"),
 				UIImage(named: "icon_bookmarks"),
 				UIImage(named: "icon_bookmarks")
 			],

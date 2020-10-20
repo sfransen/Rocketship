@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/AppIcon.icns</key>
+		<data>
+		393tcI7JKaFScINE7+BfwVyKzgo=
+		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		U8OM6Ju68OSlFEgIEZTb6W4Q1zs=
+		eRLw8xzkHS3S0KqDz8K3uYjqZ2w=
 		</data>
 		<key>Resources/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		9YXQRyIvqtb1T61BlGrQGhiVM/M=
+		OCQHIK5i+IzXKTeOVkXZOTU4xe0=
 		</data>
 		<key>Resources/Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,7 +22,7 @@
 		</data>
 		<key>Resources/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		5EJeM94U8rYFHu4EJBqRtooH5M4=
+		5KD0qhxnt127HhxCvxKOcEYYJfQ=
 		</data>
 		<key>Resources/Check.png</key>
 		<data>
@@ -75,23 +79,30 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			q7yJ/x94WGA/oMbwoq4PBWsKES4=
+			sIvRQC3Xr2QmiYQGDY/Falg6Qn4=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.marlys.SideMenuControllerSwift" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Steven Fransen (STYR2KKGS5)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		</dict>
+		<key>Resources/AppIcon.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eXndlt0jndsHf9xlgYq9fQB79bVmKRa8qGPk5DSB1mM=
+			</data>
 		</dict>
 		<key>Resources/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ApWoZqXhZOQYM5oRKKpL8KvEmYaK614nzqPv6R2c9zc=
+			Ri56nMVuU8KQfEQnD5+wcoUDVLxXrqIoeM/A4PY3Nq8=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8EFVlbC5bQKP560X/GM83zaQnERAkPiw9Kco7/RvDFk=
+			hFdo1JgLCtBhsNFBraDgBPoSlcB8x/dlzzMNmnxyn3s=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -105,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Y8gCrPJ/KCjGLaL8ciWB/1Dl5QBmQLVYAP7MrC9QgU=
+			x4Yovb4x4ye8GVHJDuL928zjZa+MKglmQ2IC8NJmTeM=
 			</data>
 		</dict>
 		<key>Resources/Check.png</key>

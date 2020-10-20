@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		gmrZ5zoHfHjqkELVRp+6XrwVmd4=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		SgnZy24fudN6VCkJvZJ/A4lu7TQ=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		DvNxDuWL7+ax78nnXWofjix4Co8=
+		pbhX6lw4a52na7iytdgwQlOJtUY=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		7KyPldDNXKLeLzmnGC72+FQT+qs=
+		VcBni2VhKTrpnCpMl5dmkeJuCm8=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,7 +26,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		e04jsX32ILeIDM1uLLMeU/LiUdY=
+		QoJ1UMSQFUPbQYaZKxj7McPhHN8=
 		</data>
 		<key>Check.png</key>
 		<data>
@@ -30,7 +38,7 @@
 		</data>
 		<key>Frameworks/RocketshipControllerSwift.framework/RocketshipControllerSwift</key>
 		<data>
-		Xk0Y+8UDgMCmYJwss8vALlr5tGI=
+		QWUjWNjyrC1ocNkdDeuMHzpzyyY=
 		</data>
 		<key>Frameworks/RocketshipControllerSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -42,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hJoI8rOembbm+0Cz69o+QfH9oJo=
+		sHJlguVi7w+nWnBw7BqGMn5jV4g=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -91,18 +99,32 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/U4Lf+rrnbYckd+PVQBUOMviwLvGZ0h8+Zc9yWQPstE=
+			</data>
+		</dict>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zn4DmVhRkCS7/i2eik7ArhLprVjdLnE0y7mX9En/BcE=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qrL23NShKOHMojafV6GEfvJ6lEJJoUHhy10cv5R317U=
+			VdtQuB+HeTIKM9Lznyb18NfYAX2mwVNXZ0WBhikIWZI=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YSUKbCW6lX35SZ9MN7iLYa2Ytd08RpMsWOWzi5AL8Nk=
+			HiyhiJWYvP3miGRosJ45Be/ktsdfQ1G8WnLz7LyQahM=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -116,7 +138,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KN8ALQJE6BwGGS1JaCkg8pfQCkt5CEjfVPJ0xkklFQk=
+			r5va4OgrmVM8rYXoPprGG6BlZVsjW2AHlc9ZtLj21Mk=
 			</data>
 		</dict>
 		<key>Check.png</key>
@@ -137,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jQZueyRGUw/scqpExbuC9gzHSW8qe7n8ulEomxHwUXo=
+			NBa5NGwHPzKbTSF2p96Jqj8Tjh6+ycEDkl1LLaGw6es=
 			</data>
 		</dict>
 		<key>Frameworks/RocketshipControllerSwift.framework/_CodeSignature/CodeResources</key>

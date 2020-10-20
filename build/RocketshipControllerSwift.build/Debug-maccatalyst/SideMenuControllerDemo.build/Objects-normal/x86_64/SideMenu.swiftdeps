@@ -36,8 +36,6 @@ depends-top-level:
 - !private "data"
 - !private "set"
 depends-member:
-- ["SK", ""]
-- !private ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "imageView"]
 - !private ["So15CALayerDelegateP", "tintColor"]
 - !private ["s7CVarArgP", "IndexPath"]
@@ -65,8 +63,6 @@ depends-member:
 - !private ["s7CVarArgP", "tintColor"]
 - !private ["s7CVarArgP", "userInterfaceStyle"]
 - !private ["s7CVarArgP", "viewControllerNames"]
-- ["Sl", ""]
-- ["SL", ""]
 - !private ["s28CustomDebugStringConvertibleP", "IndexPath"]
 - !private ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
 - !private ["s28CustomDebugStringConvertibleP", "JSONEncoder"]
@@ -149,11 +145,7 @@ depends-member:
 - !private ["SQ", "userInterfaceStyle"]
 - !private ["SQ", "viewControllerNames"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s23ExpressibleByNilLiteralP", "clear"]
-- ["s32ExpressibleByStringInterpolationP", ""]
-- ["s26ExpressibleByStringLiteralP", ""]
-- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SH", "IndexPath"]
 - !private ["SH", "JSONDecoder"]
 - !private ["SH", "JSONEncoder"]
@@ -186,7 +178,6 @@ depends-member:
 - !private ["10Foundation11JSONDecoderC", "init"]
 - !private ["10Foundation11JSONEncoderC", "encode"]
 - !private ["10Foundation11JSONEncoderC", "init"]
-- ["s25LosslessStringConvertibleP", ""]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "clear"]
 - !private ["So8NSCodingP", "imageView"]
@@ -279,7 +270,6 @@ depends-member:
 - !private ["So8NSObjectP", "JSONDecoder"]
 - !private ["So8NSObjectP", "JSONEncoder"]
 - ["So8NSObjectP", "SMCSideMenuController"]
-- ["So8NSObjectP", "String"]
 - ["So8NSObjectP", "UIColor"]
 - !private ["So8NSObjectP", "UIImage"]
 - ["So8NSObjectP", "UITableViewCell"]
@@ -339,7 +329,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "systemGreen"]
 - !private ["So14NSSecureCodingP", "systemRed"]
 - !private ["So14NSSecureCodingP", "userInterfaceStyle"]
-- !private ["So18NSTouchBarProviderP", ""]
 - !private ["So18NSTouchBarProviderP", "imageView"]
 - !private ["So18NSTouchBarProviderP", "tintColor"]
 - !private ["Sq", "clear"]
@@ -375,7 +364,6 @@ depends-member:
 - !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "sectionTitles"]
 - !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "sideMenu"]
 - !private ["25RocketshipControllerSwift19SMCSideMenuDelegateP", "viewControllerNames"]
-- ["ST", ""]
 - ["22SideMenuControllerDemo0aB0C", "IndexPath"]
 - ["22SideMenuControllerDemo0aB0C", "Int"]
 - ["22SideMenuControllerDemo0aB0C", "SMCSideMenuController"]
@@ -396,21 +384,16 @@ depends-member:
 - ["22SideMenuControllerDemo0aB0C", "startupIndexPath"]
 - ["22SideMenuControllerDemo0aB0C", "textColorOfHeader"]
 - !private ["22SideMenuControllerDemo0aB0C", "viewControllerNames"]
-- ["s16TextOutputStreamP", ""]
-- ["s20TextOutputStreamableP", ""]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
 - !private ["7Combine15TopLevelEncoderP", "encode"]
 - !private ["7Combine15TopLevelEncoderP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "tintColor"]
-- !private ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "imageView"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "tintColor"]
-- !private ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "imageView"]
 - !private ["So12UIAppearanceP", "tintColor"]
-- !private ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "imageView"]
 - !private ["So21UIAppearanceContainerP", "tintColor"]
 - !private ["So7UIColorC", "clear"]
@@ -419,43 +402,34 @@ depends-member:
 - !private ["So7UIColorC", "systemBlue"]
 - !private ["So7UIColorC", "systemGreen"]
 - !private ["So7UIColorC", "systemRed"]
-- !private ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "imageView"]
 - !private ["So17UICoordinateSpaceP", "tintColor"]
-- !private ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "imageView"]
 - !private ["So13UIDynamicItemP", "tintColor"]
-- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "imageView"]
 - !private ["So18UIFocusEnvironmentP", "tintColor"]
-- !private ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "imageView"]
 - !private ["So11UIFocusItemP", "tintColor"]
-- !private ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "imageView"]
 - !private ["So20UIFocusItemContainerP", "tintColor"]
 - !private ["So27UIGestureRecognizerDelegateP", "imageView"]
 - !private ["So7UIImageC", "init"]
 - !private ["So11UIImageViewC", "tintColor"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "imageView"]
 - !private ["So24UILargeContentViewerItemP", "tintColor"]
-- !private ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "imageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
-- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", ""]
 - !private ["So11UIResponderC", "imageView"]
 - !private ["So11UIResponderC", "tintColor"]
-- !private ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "imageView"]
 - !private ["So30UIResponderStandardEditActionsP", "tintColor"]
 - !private ["So15UITableViewCellC", "imageView"]
 - !private ["So17UITraitCollectionC", "userInterfaceStyle"]
-- !private ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "imageView"]
 - !private ["So18UITraitEnvironmentP", "tintColor"]
-- !private ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "imageView"]
 - !private ["So23UIUserActivityRestoringP", "tintColor"]
 - !private ["So20UIUserInterfaceStyleV", "dark"]
@@ -473,10 +447,7 @@ depends-member:
 - ["So14NSUserDefaultsC", "indexPath"]
 - ["So14NSUserDefaultsC", "set"]
 - !private ["So14NSUserDefaultsC", "standard"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s26_ExpressibleByColorLiteralP", "clear"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "label"]
@@ -538,11 +509,8 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "imageView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "tintColor"]
 depends-nominal:
-- "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
-- "Sl"
-- "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -550,15 +518,10 @@ depends-nominal:
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s32ExpressibleByStringInterpolationP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "10Foundation11JSONDecoderC"
 - !private "10Foundation11JSONEncoderC"
-- "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -571,10 +534,7 @@ depends-nominal:
 - !private "SY"
 - "25RocketshipControllerSwift11SMCSideMenuC"
 - "25RocketshipControllerSwift19SMCSideMenuDelegateP"
-- "ST"
 - "22SideMenuControllerDemo0aB0C"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
 - !private "7Combine15TopLevelDecoderP"
 - !private "7Combine15TopLevelEncoderP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
@@ -584,7 +544,7 @@ depends-nominal:
 - !private "So7UIColorC"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
-- "So18UIFocusEnvironmentP"
+- !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So27UIGestureRecognizerDelegateP"
@@ -593,7 +553,7 @@ depends-nominal:
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So24UILargeContentViewerItemP"
 - !private "So30UIPasteConfigurationSupportingP"
-- "So11UIResponderC"
+- !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So15UITableViewCellC"
 - !private "So17UITraitCollectionC"
@@ -602,10 +562,7 @@ depends-nominal:
 - !private "So20UIUserInterfaceStyleV"
 - "So6UIViewC"
 - "So14NSUserDefaultsC"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"

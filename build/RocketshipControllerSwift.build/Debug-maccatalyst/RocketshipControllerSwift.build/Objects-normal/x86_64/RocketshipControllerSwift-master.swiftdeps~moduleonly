@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
 options: "13ca3e615328a6911a9afa4f062a3a0b"
-build_time: [1603174274, 714348000]
+build_time: [1603235315, 147442000]
 inputs:
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerSwift/SMCSideMenuDelegate.swift": [1602910372, 832786322]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerSwift/SMCSideMenuController.swift": [1603163000, 290494849]

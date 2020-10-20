@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
 options: "2cd8438dd7d44c41985a622c79f24f4f"
-build_time: [1603174677, 87534000]
+build_time: [1603235361, 942587000]
 inputs:
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeTwo_ThreeViewController.swift": [1603173961, 759074282]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFour_OneViewController.swift": [1603173897, 88500025]
@@ -15,13 +15,13 @@ inputs:
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeThree_ThreeViewController.swift": [1603173932, 631731146]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/Settings_ViewController.swift": [1602719690, 237541199]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/Results_ViewController.swift": [1602914089, 367284656]
-  "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/SideMenu.swift": [1603174254, 933063155]
-  "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFive_FIveViewController.swift": [1603173792, 284062847]
+  "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/SideMenu.swift": [1603175225, 716466239]
+  "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFive_FIveViewController.swift": [1603217119, 423225205]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeThree_TwoViewController.swift": [1603173939, 719742346]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFive_ThreeViewController.swift": [1603173811, 51496786]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/BaseViewController.swift": [1602912484, 494263649]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFour_FourViewController.swift": [1603173900, 759945960]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeOne_TwoViewController.swift": [1602964526, 163105285]
-  "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFive_FourViewController.swift": [1603173819, 267260926]
+  "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFive_FourViewController.swift": [1603217214, 681500904]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeTwo_TwoViewController.swift": [1603173971, 753362277]
   "/Users/sfransen/Desktop/Github/Rocketship/SideMenuControllerDemo/GradeFour_ThreeViewController.swift": [1603173893, 465038715]

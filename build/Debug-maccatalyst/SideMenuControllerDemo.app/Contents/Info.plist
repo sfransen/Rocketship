@@ -10,6 +10,10 @@
 	<string>RocketShip</string>
 	<key>CFBundleExecutable</key>
 	<string>SideMenuControllerDemo</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.marlys.Fractions</string>
 	<key>CFBundleInfoDictionaryVersion</key>

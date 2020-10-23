@@ -99,8 +99,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B4169102539483D006DC755 /* Results.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Results.html; path = SideMenuControllerDemo/Resources/Results.html; sourceTree = "<group>"; };
-		6B41691425394C83006DC755 /* Save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Save.png; path = SideMenuControllerDemo/Resources/Save.png; sourceTree = "<group>"; };
+		6B4169102539483D006DC755 /* Results.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Results.html; sourceTree = "<group>"; };
+		6B41691425394C83006DC755 /* Save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Save.png; sourceTree = "<group>"; };
 		6B416942253A2C27006DC755 /* GradeFour_FIveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_FIveViewController.swift; sourceTree = "<group>"; };
 		6B416943253A2C27006DC755 /* GradeFive_FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFive_FourViewController.swift; sourceTree = "<group>"; };
 		6B416944253A2C27006DC755 /* GradeFour_FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeFour_FourViewController.swift; sourceTree = "<group>"; };
@@ -122,16 +122,16 @@
 		6BBF4A1B2536A695007DDE1F /* Results_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results_ViewController.swift; sourceTree = "<group>"; };
 		6BBF4A1E2536A695007DDE1F /* Settings_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings_ViewController.swift; sourceTree = "<group>"; };
 		6BBF4A372536A98F007DDE1F /* SideMenuControllerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SideMenuControllerDemo.entitlements; sourceTree = "<group>"; };
-		6BBF4A5D2537B6BC007DDE1F /* blackboard2-landscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blackboard2-landscale.png"; path = "SideMenuControllerDemo/Resources/blackboard2-landscale.png"; sourceTree = "<group>"; };
-		6BBF4A662537E446007DDE1F /* rocketship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rocketship.png; path = SideMenuControllerDemo/Resources/rocketship.png; sourceTree = "<group>"; };
-		6BBF4A672537E446007DDE1F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = SideMenuControllerDemo/Resources/logo.png; sourceTree = "<group>"; };
-		6BBF4A682537E446007DDE1F /* logo-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-2.png"; path = "SideMenuControllerDemo/Resources/logo-2.png"; sourceTree = "<group>"; };
-		6BBF4A692537E446007DDE1F /* Hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hat.png; path = SideMenuControllerDemo/Resources/Hat.png; sourceTree = "<group>"; };
-		6BBF4A702537F1D6007DDE1F /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = SideMenuControllerDemo/Resources/checkmark.png; sourceTree = "<group>"; };
-		6BBF4A712537F1D6007DDE1F /* RedCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RedCheck.png; path = SideMenuControllerDemo/Resources/RedCheck.png; sourceTree = "<group>"; };
-		6BBF4A722537F1D6007DDE1F /* Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Check.png; path = SideMenuControllerDemo/Resources/Check.png; sourceTree = "<group>"; };
-		6BBF4A732537F1D6007DDE1F /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = X.png; path = SideMenuControllerDemo/Resources/X.png; sourceTree = "<group>"; };
-		6BBF4A742537F1D6007DDE1F /* Pound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pound.png; path = SideMenuControllerDemo/Resources/Pound.png; sourceTree = "<group>"; };
+		6BBF4A5D2537B6BC007DDE1F /* blackboard2-landscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackboard2-landscale.png"; sourceTree = "<group>"; };
+		6BBF4A662537E446007DDE1F /* rocketship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocketship.png; sourceTree = "<group>"; };
+		6BBF4A672537E446007DDE1F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6BBF4A682537E446007DDE1F /* logo-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-2.png"; sourceTree = "<group>"; };
+		6BBF4A692537E446007DDE1F /* Hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hat.png; sourceTree = "<group>"; };
+		6BBF4A702537F1D6007DDE1F /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		6BBF4A712537F1D6007DDE1F /* RedCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedCheck.png; sourceTree = "<group>"; };
+		6BBF4A722537F1D6007DDE1F /* Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Check.png; sourceTree = "<group>"; };
+		6BBF4A732537F1D6007DDE1F /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
+		6BBF4A742537F1D6007DDE1F /* Pound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pound.png; sourceTree = "<group>"; };
 		B355FDB8221BEA3100651ECE /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		B355FDBA221BEA3800651ECE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B3B7F26A221AA2EF005A3BD0 /* RocketshipControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RocketshipControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,18 +166,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3B2571223D82BA30083B16E /* Frameworks */ = {
+		6B8E260E25429A13005FDD80 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B3B7F260221AA2EF005A3BD0 = {
-			isa = PBXGroup;
-			children = (
-				6BBF4A722537F1D6007DDE1F /* Check.png */,
-				6B4169102539483D006DC755 /* Results.html */,
 				6BBF4A732537F1D6007DDE1F /* X.png */,
 				6B41691425394C83006DC755 /* Save.png */,
 				6BBF4A702537F1D6007DDE1F /* checkmark.png */,
@@ -188,6 +179,23 @@
 				6BBF4A672537E446007DDE1F /* logo.png */,
 				6BBF4A662537E446007DDE1F /* rocketship.png */,
 				6BBF4A5D2537B6BC007DDE1F /* blackboard2-landscale.png */,
+				6B4169102539483D006DC755 /* Results.html */,
+				6BBF4A722537F1D6007DDE1F /* Check.png */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		B3B2571223D82BA30083B16E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3B7F260221AA2EF005A3BD0 = {
+			isa = PBXGroup;
+			children = (
+				6B8E260E25429A13005FDD80 /* Resourses */,
 				B3B7F26C221AA2EF005A3BD0 /* SideMenuControllerSwift */,
 				B3B7F27E221AA382005A3BD0 /* SideMenuControllerDemo */,
 				B3B7F26B221AA2EF005A3BD0 /* Products */,

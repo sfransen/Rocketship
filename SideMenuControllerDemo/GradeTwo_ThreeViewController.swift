@@ -8,7 +8,7 @@ class GradeTwo_ThreeViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 2 Multiplication"
-        AppDelegate.Global_Variables.TheTitle = "Grade 2 Multiplication"
+		AppDelegate.Global_Variables.TheTitle = "Grade 2 Multiplication"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)

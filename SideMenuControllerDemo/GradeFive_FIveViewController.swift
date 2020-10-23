@@ -7,7 +7,7 @@ class GradeFive_FiveViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 5 Rounding"
-        AppDelegate.Global_Variables.TheTitle = "Grade 5 Rounding"
+		AppDelegate.Global_Variables.TheTitle = "Grade 5 Rounding"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
@@ -18,21 +18,21 @@ class GradeFive_FiveViewController: BaseViewController
 		let numberFour = Int.random(in: 1..<20)
 		let numberFive = Int.random(in: 1..<20)
 
-        let multi = " * "
-        let Minus = " - "
-        let ADDSymbol = " + "
+		let multi = " * "
+		let Minus = " - "
+		let ADDSymbol = " + "
 
-        var str1 = "";
-        str1.addString(str: String(numberOne))
-        str1.addString(str: Minus)
-        str1.addString(str: String(numberTwo))
-        str1.addString(str: ADDSymbol)
-        str1.addString(str: String(numberThree))
-        str1.addString(str: multi)
-        str1.addString(str: String(numberFour))
-        str1.addString(str: Minus)
-        str1.addString(str: String(numberFive))
-        str1.addString(str: " = ?")
+		var str1 = "";
+		str1.addString(str: String(numberOne))
+		str1.addString(str: Minus)
+		str1.addString(str: String(numberTwo))
+		str1.addString(str: ADDSymbol)
+		str1.addString(str: String(numberThree))
+		str1.addString(str: multi)
+		str1.addString(str: String(numberFour))
+		str1.addString(str: Minus)
+		str1.addString(str: String(numberFive))
+		str1.addString(str: " = ?")
 		let TheQuestion = str1
 		print(TheQuestion)
 
@@ -99,12 +99,26 @@ class GradeFive_FiveViewController: BaseViewController
 		AppDelegate.Global_Variables.Global_Percents = THEREALPercent as String
 
 		let Percent_label: UILabel = UILabel()
-		Percent_label.frame = CGRect(x: 300, y: 660, width: 500, height: 70)
+		print(AppDelegate.Global_Variables.screen_height)
+		print(AppDelegate.Global_Variables.screen_width)
+
+		if ( AppDelegate.Global_Variables.screen_width == 1024)
+		{
+			print("mac or large ipad")
+			Percent_label.frame = CGRect(x: 300, y: 660, width: 500, height: 70)
+			Percent_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
+		}
+		else
+		{
+			print("other")
+			Percent_label.frame = CGRect(x: 300, y: 660, width: 500, height: 70)
+			Percent_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
+		}
+		
 		Percent_label.backgroundColor = .clear
 		Percent_label.textColor = .blue
 		Percent_label.textAlignment = NSTextAlignment.center
 		Percent_label.text = String(THEREALPercent) + "%"
-		Percent_label.font = UIFont(name:"ChalkboardSE-Bold", size: 60.0)
 		self.view.addSubview(Percent_label)
 	}
 
@@ -338,6 +352,21 @@ class GradeFive_FiveViewController: BaseViewController
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
+		print(AppDelegate.Global_Variables.screen_height)
+		print(AppDelegate.Global_Variables.screen_width)
+		
+		if ( AppDelegate.Global_Variables.devicetype == "mac" )
+		{
+			print("Mac OS")
+		}
+		else if ( AppDelegate.Global_Variables.devicetype == "iphone" )
+		{
+			print("iphone")
+		}
+		else if ( AppDelegate.Global_Variables.devicetype == "ipad" )
+		{
+			print("ipad")
+		}
 		self.view.backgroundColor = UIColor(patternImage: UIImage(named:"blackboard2-landscale.png")!)
 
 		Add_Image()

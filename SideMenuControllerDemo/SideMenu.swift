@@ -8,7 +8,12 @@ class SideMenu: SMCSideMenu
 	override init()
 	{
 		super.init()
-
+		#if targetEnvironment(macCatalyst)
+			print("UIKit running on macOS")
+		#else
+			print("Your regular code")
+		#endif
+		
 		self.viewControllerNames = [
 			[
 				"GradeOne_OneViewController",
@@ -28,29 +33,35 @@ class SideMenu: SMCSideMenu
 				"GradeFour_OneViewController",
 				"GradeFour_TwoViewController",
 				"GradeFour_ThreeViewController",
-                "GradeFour_FourViewController",
+				"GradeFour_FourViewController",
 				"GradeFour_FiveViewController"
 			],
 			[
 				"GradeFive_OneViewController",
 				"GradeFive_TwoViewController",
 				"GradeFive_ThreeViewController",
-                "GradeFive_FourViewController",
+				"GradeFive_FourViewController",
 				"GradeFive_FiveViewController"
 			],
-            [
-                "Settings_ViewController",
-                "Results_ViewController"
-            ],
+			[
+				"Settings_ViewController",
+				"Results_ViewController"
+			],
 		]
 		self.sectionTitles = [
-			"Grade 1",
-			"Grade 2",
-			"Grade 3",
-			"Grade 4",
-			"Grade 5",
-            "Settings"
-		]
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
+			//"Grade 1",
+			 //"Grade 2",
+			 //"Grade 3",
+			 //"Grade 4",
+			 //"Grade 5",
+			 //"Settings"
+			 ]
 		self.menuTitles = [
 			[
 				"Grade 1 Additions",
@@ -70,30 +81,25 @@ class SideMenu: SMCSideMenu
 				"Grade 4 Additions",
 				"Grade 4 Subtraction",
 				"Grade 4 Multiplication",
-				"Grade 4 Order Of Operations",
-                "Grade 4 Rounding"
+				"Grade 4 Rounding",
+				"Grade 4 Order Of Operations"
 			],
 			[
 				"Grade 5 Additions",
 				"Grade 5 Subtraction",
 				"Grade 5 Multiplication",
-				"Grade 5 Order Of Operations",
-                "Grade 5 Rounding",
+				"Grade 5 Rounding",
+				"Grade 5 Order Of Operations"
 			],
-            [
-                "Settings",
-                "Results"
-            ],
+			[
+				"Settings",
+				"Results"
+			],
 		]
 		self.menuIcons = [
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites")
-            ],
-			[
-				UIImage(named: "icon_timeline"),
-				UIImage(named: "icon_favorites"),
-				UIImage(named: "icon_bookmarks")
 			],
 			[
 				UIImage(named: "icon_timeline"),
@@ -103,21 +109,26 @@ class SideMenu: SMCSideMenu
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
-                UIImage(named: "icon_favorites"),
+				UIImage(named: "icon_bookmarks")
+			],
+			[
+				UIImage(named: "icon_timeline"),
+				UIImage(named: "icon_favorites"),
+				UIImage(named: "icon_favorites"),
 				UIImage(named: "icon_bookmarks"),
 				UIImage(named: "icon_bookmarks")
 			],
 			[
 				UIImage(named: "icon_timeline"),
 				UIImage(named: "icon_favorites"),
-                UIImage(named: "icon_favorites"),
+				UIImage(named: "icon_favorites"),
 				UIImage(named: "icon_bookmarks"),
 				UIImage(named: "icon_bookmarks")
 			],
-            [
-                UIImage(named: "icon_settings"),
-                UIImage(named: "icon_info")
-            ],
+			[
+				UIImage(named: "icon_settings"),
+				UIImage(named: "icon_info")
+			],
 		]
 	}
 
@@ -168,9 +179,9 @@ class SideMenu: SMCSideMenu
 extension UserDefaults
 {
 	func indexPath(forKey key: String) -> IndexPath?
-		{
+	{
 		if let data = data(forKey: key), let indexPath = try? JSONDecoder().decode(IndexPath.self, from: data)
-			{
+		{
 			return indexPath
 		}
 		return nil

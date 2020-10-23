@@ -13,7 +13,7 @@ class GradeTwo_OneViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 2 Additions"
-        AppDelegate.Global_Variables.TheTitle = "Grade 2 Additions"
+		AppDelegate.Global_Variables.TheTitle = "Grade 2 Additions"
 	}
 
 	func RandomNumber() -> (String)

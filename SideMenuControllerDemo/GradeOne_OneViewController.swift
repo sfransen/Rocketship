@@ -28,7 +28,7 @@ class GradeOne_OneViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 1 Additions"
-        AppDelegate.Global_Variables.TheTitle = "Grade 1 Additions"
+		AppDelegate.Global_Variables.TheTitle = "Grade 1 Additions"
 	}
 
 	func RandomNumber() -> (String)
@@ -62,7 +62,7 @@ class GradeOne_OneViewController: BaseViewController
 		let numberOne = Int.random(in: 1..<10)
 		let numberTwo = Int.random(in: 1..<10)
 
-        let numberThree : Int = numberOne - 1
+		let numberThree : Int = numberOne - 1
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2
 		let multi = " + "

@@ -12,7 +12,7 @@ class GradeFour_TwoViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 4 Subtraction"
-        AppDelegate.Global_Variables.TheTitle = "Grade 4 Subtraction"
+		AppDelegate.Global_Variables.TheTitle = "Grade 4 Subtraction"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)

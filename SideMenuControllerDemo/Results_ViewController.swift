@@ -28,7 +28,7 @@ class Results_ViewController: BaseViewController, WKNavigationDelegate, MFMailCo
 				print("Failed to read from file")
 			}
 			let text3 = "<h1><table><tbody><tr><td>Class:</td><td><font color = 'black'>" + String(AppDelegate.Global_Variables.TheTitle) + "</font></td></tr>" +
-            "<tr><td>Percentage:</td><td><font color = 'black'>" + String(AppDelegate.Global_Variables.Global_Percents) + "%" + "</font></td></tr>" +
+			"<tr><td>Percentage:</td><td><font color = 'black'>" + String(AppDelegate.Global_Variables.Global_Percents) + "%" + "</font></td></tr>" +
 			"<tr><td>Total:</td><td><font color = 'purple'>" + String(AppDelegate.Global_Variables.TOTAL_Count) + "</font></td></tr>" +
 			"<tr><td>Correct:</td><td><font color = 'green'>" + String(AppDelegate.Global_Variables.CORRECT_Count) + "</font></td></tr>" +
 			"<tr><td>Wrong:</td><td><font color = 'red'>" + String(AppDelegate.Global_Variables.WRONG_Count) + "</font></td></tr></tr></tbody></table></h1>" + text2

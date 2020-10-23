@@ -12,25 +12,25 @@ class GradeOne_TwoViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 1 Subtraction"
-        AppDelegate.Global_Variables.TheTitle = "Grade 1 Subtraction"
+		AppDelegate.Global_Variables.TheTitle = "Grade 1 Subtraction"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
 	{
-        let numberOneTmp = Int.random(in: 1..<10)
-        let numberTwoTemp = Int.random(in: 1..<10)
-        var numberOne = 0
-        var numberTwo = 0
-        if ( numberOneTmp > numberTwoTemp )
-        {
-            numberOne = numberOneTmp
-            numberTwo = numberTwoTemp
-        }
-        else
-        {
-            numberOne = numberTwoTemp
-            numberTwo = numberOneTmp
-        }
+		let numberOneTmp = Int.random(in: 1..<10)
+		let numberTwoTemp = Int.random(in: 1..<10)
+		var numberOne = 0
+		var numberTwo = 0
+		if ( numberOneTmp > numberTwoTemp )
+		{
+			numberOne = numberOneTmp
+			numberTwo = numberTwoTemp
+		}
+		else
+		{
+			numberOne = numberTwoTemp
+			numberTwo = numberOneTmp
+		}
 		let numberThree : Int = numberOne - 1
 		let numberFour : Int = numberOne + 1
 		let numberFive : Int = numberTwo + 2

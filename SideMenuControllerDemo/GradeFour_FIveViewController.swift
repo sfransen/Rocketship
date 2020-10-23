@@ -7,7 +7,7 @@ class GradeFour_FiveViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 4 Order of Operations"
-        AppDelegate.Global_Variables.TheTitle = "Grade 4 Order of Operations"
+		AppDelegate.Global_Variables.TheTitle = "Grade 4 Order of Operations"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
@@ -19,19 +19,19 @@ class GradeFour_FiveViewController: BaseViewController
 		let numberFive = Int.random(in: 1..<10)
 
 		let multi = " * "
-        let Minus = " - "
-        let ADDSymbol = " + "
+		let Minus = " - "
+		let ADDSymbol = " + "
 
 		var str1 = "";
 		str1.addString(str: String(numberOne))
 		str1.addString(str: Minus)
 		str1.addString(str: String(numberTwo))
-        str1.addString(str: ADDSymbol)
-        str1.addString(str: String(numberThree))
-        str1.addString(str: multi)
-        str1.addString(str: String(numberFour))
-        str1.addString(str: Minus)
-        str1.addString(str: String(numberFive))
+		str1.addString(str: ADDSymbol)
+		str1.addString(str: String(numberThree))
+		str1.addString(str: multi)
+		str1.addString(str: String(numberFour))
+		str1.addString(str: Minus)
+		str1.addString(str: String(numberFive))
 		str1.addString(str: " = ?")
 		let TheQuestion = str1
 		print(TheQuestion)

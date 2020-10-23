@@ -155,7 +155,7 @@ extension SMCSideMenu: SMCSideMenuDelegate
 	{
 		if section < sectionTitles.count
 		{
-			return sectionTitles[section].count == 0 ? 5.0 : -1.0 // -1.0: Auto
+			return sectionTitles[section].count == 0 ? 3.0 : 5.0 // -1.0: Auto   //CHange to small
 		}
 		return 0.0
 	}

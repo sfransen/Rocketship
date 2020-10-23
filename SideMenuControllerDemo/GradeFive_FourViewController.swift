@@ -12,7 +12,7 @@ class GradeFive_FourViewController: BaseViewController
 		super.setup()
 
 		self.title = "Grade 5 Order of Operations"
-        AppDelegate.Global_Variables.TheTitle = "Grade 5 Order of Operations"
+		AppDelegate.Global_Variables.TheTitle = "Grade 5 Order of Operations"
 	}
 
 	func RandomQuestion2() -> (String, String, String, String, String, Bool, Bool, Bool, Bool, String)
